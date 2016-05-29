@@ -24,52 +24,74 @@
     </nav>
         </header>
     <section class="content">
-        
         <div class="content-image"><img src="http://placehold.it/320x160"></div>
          <div class="content-text">
-             <h1>СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h1>
-             <p> Рассмотрим 5 причин, по которым Седона круче чем ГРАНД КАНЬОН</p>
+             <h1>ОСТАВЬТЕ СВОЙ ОТЗЫВ</h1>
+             <p> ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ</p>
     </div>
- </section>  
+ </section>
+        
+       
       
       <section class="name">
+  
           
           
-          <div class="form-wraper">
-              <h2 class="name-va">Представьтесь пожалуйста</h2>
-      <form action="/echo" method="post">
-                <label for="name">Имя</label> 
-                <input type="text" id="name" name="name" placeholder="Петр">
-                <label for="sorname">Фамилия</label>
-          <input type="text" id="sorname" name="sorname" placeholder="Иванов"
-                 <label for="otch">Отчество</label>
-          <input type="text" id="otch" name="otch" placeholder="Александрович">
+         <div class="form-name">
+             
+    <h2 class="form-name__header">Представьтесь пожалуйста</h2>
+    <form action="/echo" method="post">
+    <label for="name">Имя</label> 
+    <input class="form-name__name" type="text" id="name" name="name" placeholder="Петр">
+    <label for="sorname">Фамилия</label>
+    <input  class="form-name__sorn" type="text" id="sorname" name="sorname" placeholder="Иванов"
+     <label for="otch">Отчество</label>
+    <input  class="form-name__otch" type="text" id="otch" name="otch" placeholder="Александрович">
+          </form> 
           </div>
-        </form> 
+      
       <div class="contacts">
-      <h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+      <h2 class="contacts__header">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
         <form action="/echo" method="post">
         <label for="tel">Контактный телефон:</label>
-         <input type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон">
+         <input class="contacts__tel" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон">
         <label for="email">Электронная почта:</label>
-        <input type="email" id="email" name="email" placeholder="Введите e-mail">
+        <input class="contacts__email" type="email" id="email" name="email" placeholder="Введите e-mail">
         </div>
           </form>
-           </div>
-    <
+           
+    <div class="choise-radio">
+      <h2 class="choise-radio__name">Ваше общее впечатление</h2>
+    <form action="/echo" method="post">
+     <label><input class="choise-radio__pos" type="radio" name="pos" checked>Скорее положительное</label>
+     <label><input class="choise-radio__neg" type="radio" name="neg">Скорее отридательное</label>
+     <label><input class="choise-radio__noth" type="radio" name="noth">Затрудняюсь ответить</label>
+     </form>     
+        </div>
+      
+      <div class="choise-cheked">
+    <h2 class="choise-cheked__header">Местные достопримечательности</h2>
+    <form action="/echo" method="post">
+      <label><input class="choise-cheked__bri" type="cheked" name="bridge" checked>Мост дъявола</label>
+     <label><input class="choise-cheked__park" type="cheked" name="park" checked>Слайд парк</label>
+     <label><input class="choise-cheked__moun" type="cheked" name="mount">Гора колокол</label>
+        <label><input type="cheked" name="red" checked>Красные скалы
+     </form>          
+      </div>
+        
           
-          
-          
-          
-      </section>
+      <div class="send">
+     <form action="/echo" method="post">
+    <label for="text">Опишите свои эмоции:</label>
+    <textarea class="send__text" name="text" cols="1" rows="7">Опишите подробно свои восторги</textarea>
+    <div class="buttons">
+        <input class="send__btn" type="submit" name="submit" value="Отправить отзыв"></div>
+      </form>
+      </div>
+    </section>  
       
-      
-      
-      
-      
-      <footer class="page-footer">
- 
- <div class="page-footer__wrapper">    
+<footer class="page-footer">
+  <div class="page-footer__wrapper">    
    <p>#VISITSEDONA</p>  
 <p class="page-footer__social">
      <span class="social-links">
@@ -79,7 +101,7 @@
     </span>
     </p>
 
-<p class="page-footer-copyright">
+<p class="page-footer__copyright">
      разработано HTMLACADEMY
      </p>
      
