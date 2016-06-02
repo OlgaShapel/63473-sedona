@@ -1,112 +1,82 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+<body>
 <header class="page-header">
-      <h1 class="visually-hidden">Sity Sedona</h1>
-    <div class="page-header__logo">
-    <img src="img/logo_mobile.png" widht="102" height="82" alt="sedona">
-        </div>
-    <button class="main-nav__toggle" type="button">Меню</button>
-    
-<nav class="main-nav">
+  <h1 class="visually-hidden">Sity Sedona</h1>
+  <a class="page-header__logo" href="#">
+    <img src="img/logo_mobile.png" widht="102" height="82" alt="sedona"></a>
+  <button class="main-nav__toggle" type="button">Меню</button>
+  <nav class="main-nav">
     <div class="main-class__wrapper">
-    <ul class="main-nav__items">
-    <li class="main-nav__item main-nav__item--glavn"><a href="#">ГЛАВНАЯ</a></li>
-        <li class="main-nav__item main-nav__item--galery"><a href="#">ФОТО И ВИДЕО</a></li>
-        <li class="main-nav__item main-nav__item--review"><a href="#">ФОРМА ОТЗЫВА</a></li>
-        <li class="main-nav__item main-nav__item--HTML"><a href="#">HTMLACADEMY</a></li>
-        </ul>
-        </div>
-    </nav>
-        </header>
-    <section class="content">
-        <div class="content-image"><img src="http://placehold.it/320x160"></div>
-         <div class="content-text">
-             <h1>ОСТАВЬТЕ СВОЙ ОТЗЫВ</h1>
-             <p> ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ</p>
+      <ul class="main-nav__items">
+        <li class="main-nav__glavn"><a href="#">ГЛАВНАЯ</a></li>
+        <li class="main-nav__galery"><a href="#">ФОТО И ВИДЕО</a></li>
+        <li class="main-nav__review"><a href="#">ФОРМА ОТЗЫВА</a></li>
+        <li class="main-nav__HTMLA"><a href="#">HTMLACADEMY</a></li>
+      </ul>
     </div>
- </section>
-        
-       
-      
-      <section class="name">
-  
-          
-          
-         <div class="form-name">
-             
-    <h2 class="form-name__header">Представьтесь пожалуйста</h2>
-    <form action="/echo" method="post">
-    <label for="name">Имя</label> 
-    <input class="form-name__name" type="text" id="name" name="name" placeholder="Петр">
+  </nav>
+</header>
+<section class="content">
+  <div class="content-image"><img src="http://placehold.it/320x160"></div>
+  <div class="content-text">
+    <h1>Остасвьте свой отзыв</h1>
+    <p> Помогите нашим отлеям стать лучше! Оставьте отзыв о них, а также о поесещенных вами достопримечательностях! </p>
+  </div>
+</section>
+<section class="forms">
+  <form action="/echo" method="post">
+    <h2 class="form__header">Представьтесь пожалуйста</h2> (бордер топ element)
+    <label for="name">Имя</label>
+    <input class="form__text" type="text" id="name" name="name" placeholder="Петр"> (элементы блоки по типу один класс
+    для всех одинаковых)
     <label for="sorname">Фамилия</label>
-    <input  class="form-name__sorn" type="text" id="sorname" name="sorname" placeholder="Иванов"
-     <label for="otch">Отчество</label>
-    <input  class="form-name__otch" type="text" id="otch" name="otch" placeholder="Александрович">
-          </form> 
-          </div>
-      
-      <div class="contacts">
-      <h2 class="contacts__header">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
-        <form action="/echo" method="post">
-        <label for="tel">Контактный телефон:</label>
-         <input class="contacts__tel" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон">
-        <label for="email">Электронная почта:</label>
-        <input class="contacts__email" type="email" id="email" name="email" placeholder="Введите e-mail">
-        </div>
-          </form>
-           
-    <div class="choise-radio">
-      <h2 class="choise-radio__name">Ваше общее впечатление</h2>
-    <form action="/echo" method="post">
-     <label><input class="choise-radio__pos" type="radio" name="pos" checked>Скорее положительное</label>
-     <label><input class="choise-radio__neg" type="radio" name="neg">Скорее отридательное</label>
-     <label><input class="choise-radio__noth" type="radio" name="noth">Затрудняюсь ответить</label>
-     </form>     
-        </div>
-      
-      <div class="choise-cheked">
-    <h2 class="choise-cheked__header">Местные достопримечательности</h2>
-    <form action="/echo" method="post">
-      <label><input class="choise-cheked__bri" type="cheked" name="bridge" checked>Мост дъявола</label>
-     <label><input class="choise-cheked__park" type="cheked" name="park" checked>Слайд парк</label>
-     <label><input class="choise-cheked__moun" type="cheked" name="mount">Гора колокол</label>
-        <label><input type="cheked" name="red" checked>Красные скалы
-     </form>          
-      </div>
-        
-          
+    <input class="form__text" type="text" id="sorname" name="sorname" placeholder="Иванов"
+    <label for="otch">Отчество</label>
+    <input class="form__text" type="text" id="otch" name="otch" placeholder="Александрович">
+    <h2 class="form__header">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+    <label for="tel">Контактный телефон:</label>
+    <input class="form-text" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}"
+           placeholder="Введите телефон">
+    <label for="email">Электронная почта:</label>
+    <input class="form-text" type="email" id="email" name="email" placeholder="Введите e-mail">
+    <h2 class="form__header">Ваше общее впечатление</h2>
+    <label><input class="radio__ch" type="radio" name="pos" checked>Скорее положительное</label>
+    <label><input class="radio" type="radio" name="neg">Скорее отридательное</label>
+    <label><input class="radio" type="radio" name="noth">Затрудняюсь ответить</label> квадрат со скругленными углами
+    <h2 class="form__header">Местные достопримечательности</h2>
+    <label><input class="check__ch" type="cheked" name="bridge" checked>Мост дъявола</label>
+    <label><input class="check__ch" type="cheked" name="park" checked>Слайд парк</label> квадрат повернутый на 45
+    <label><input class="check__ch" type="cheked" name="mount">Гора колокол</label>
+    <label><input type="cheked__ch" name="red" checked>Красные скалы
       <div class="send">
-     <form action="/echo" method="post">
-    <label for="text">Опишите свои эмоции:</label>
-    <textarea class="send__text" name="text" cols="1" rows="7">Опишите подробно свои восторги</textarea>
-    <div class="buttons">
-        <input class="send__btn" type="submit" name="submit" value="Отправить отзыв"></div>
-      </form>
+        <form action="/echo" method="post">
+          <label for="text">Опишите свои эмоции:</label>
+          <textarea class="send__text" name="text" cols="1" rows="7">Опишите подробно свои восторги</textarea>
+          <div class="buttons">
+            <input class="send__btn" type="submit" name="submit" value="Отправить отзыв"></div>
+        </form>
       </div>
-    </section>  
-      
+</section>
 <footer class="page-footer">
-  <div class="page-footer__wrapper">    
-   <p>#VISITSEDONA</p>  
-<p class="page-footer__social">
+  <div class="page-footer__wrapper">
+    <p>#VISITSEDONA</p>
+    <p class="page-footer__social">
      <span class="social-links">
     <a class="social-link social-link--tw" href="#">tweeter</a>
     <a class="social-link social-link--fb" href="#">facebook</a>
     <a class="social-link social-link--yt" href="#">youtube</a>
     </span>
     </p>
+    <p class="page-footer__copyright">
+      разработано HTMLACADEMY
+    </p>
+  </div>
+</footer>
 
-<p class="page-footer__copyright">
-     разработано HTMLACADEMY
-     </p>
-     
-     </div>
-   </footer>   
-      
-  </body>
+</body>
 </html>
