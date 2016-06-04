@@ -19,58 +19,47 @@
   </nav>
   <div class="header__image"><img src="http://placehold.it/320x160"></div>
   <div class="header-text">
-    <h1 class="header-text__title">фото и видео</h1>
-    <p class="header-text__text"> не можете решиться на путешествие из-за курса? фотографии помогут забыть вам о политике и экономике.</p>
+    <h1 class="header-text__title">Оставьте свой отзыв</h1>
+    <p class="header-text__text"> Помогите нашим отлеям стать лучше! Оставьте отзыв о них, а также о поесещенных вами достопримечательностях</p>
   </div>
 </header>
-<section class="content">
-  <div class="content-image"><img src="http://placehold.it/320x160"></div>
-  <div class="content-text">
-    <h1>Остасвьте свой отзыв</h1>
-    <p> Помогите нашим отлеям стать лучше! Оставьте отзыв о них, а также о поесещенных вами достопримечательностях! </p>
-  </div>
-</section>
-<section class="forms">
+<section class="form">
   <form action="/echo" method="post">
-    <h2 class="form__header">Представьтесь пожалуйста</h2> (бордер топ element)
+    <h2 class="form__header">Представьтесь пожалуйста</h2>
     <label for="name">Имя</label>
-    <input class="form__text" type="text" id="name" name="name" placeholder="Петр"> (элементы блоки по типу один класс
-    для всех одинаковых)
+    <input class="form__text" type="text" id="name" name="name" placeholder="Петр">
     <label for="sorname">Фамилия</label>
     <input class="form__text" type="text" id="sorname" name="sorname" placeholder="Иванов"
     <label for="otch">Отчество</label>
     <input class="form__text" type="text" id="otch" name="otch" placeholder="Александрович">
     <h2 class="form__header">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
     <label for="tel">Контактный телефон:</label>
-    <input class="form-text" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}"
+    <input class="form__text" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}"
            placeholder="Введите телефон">
     <label for="email">Электронная почта:</label>
-    <input class="form-text" type="email" id="email" name="email" placeholder="Введите e-mail">
+    <input class="form__text" type="email" id="email" name="email" placeholder="Введите e-mail">
     <h2 class="form__header">Ваше общее впечатление</h2>
     <label><input class="radio__ch" type="radio" name="pos" checked>Скорее положительное</label>
     <label><input class="radio" type="radio" name="neg">Скорее отридательное</label>
-    <label><input class="radio" type="radio" name="noth">Затрудняюсь ответить</label> квадрат со скругленными углами
+    <label><input class="radio" type="radio" name="noth">Затрудняюсь ответить</label>
     <h2 class="form__header">Местные достопримечательности</h2>
-    <label><input class="check__ch" type="cheked" name="bridge" checked>Мост дъявола</label>
-    <label><input class="check__ch" type="cheked" name="park" checked>Слайд парк</label> квадрат повернутый на 45
-    <label><input class="check__ch" type="cheked" name="mount">Гора колокол</label>
-    <label><input type="cheked__ch" name="red" checked>Красные скалы
-      <label type="text">Опишите свои эмоции:</label>
-      <textarea class="send__text" name="text" cols="1" rows="7" placeholder="Опишите подробно свои восторги"></textarea>
-      <button class="form__button">
-        <input class="send__btn" type="submit" name="submit" value="Отправить отзыв"></button>
+    <label><input class="check__ch" type="checkbox" name="bridge" checked>Мост дъявола</label>
+    <label><input class="check__ch" type="checkbox" name="park" checked>Слайд парк</label>
+    <label><input class="check__ch" type="checkbox" name="mount">Гора колокол</label>
+    <label><input class="check__ch" type="checkbox" name="red" checked>Красные скалы></label>
+    <h2 class="form__header">Опишите свои эмоции:</h2>
+    <label><textarea class="form__text" name="text" cols="1" rows="7"
+                     placeholder="Опишите подробно свои восторги"></textarea></label>
+    <button class="form__button" type="submit" name="submit" value="Отправить отзыв">Отправить отзыв</button>
   </form>
-
 </section>
 <footer class="footer">
   <p class="footer__text">#VISITSEDONA</p>
-  <p class="footer__social">
-        <span class="social-links">
+  <div class="social-link">
     <a class="social-link social-link--tw" href="#">tweeter</a>
     <a class="social-link social-link--fb" href="#">facebook</a>
     <a class="social-link social-link--yt" href="#">youtube</a>
-    </span>
-  </p>
+  </div>
   <p class="footer-copyright">разработано HTMLACADEMY</p>
 </footer>
 </body>
