@@ -5,7 +5,7 @@
   <title>HTML Academy: Седона</title>
 </head>
 <body>
-<header class="page-header">
+<header class="header">
   <nav class="main-nav">
     <ul class="main-nav__items">
       <li class="main-nav__item"><a href="#">ГЛАВНАЯ</a></li>
@@ -14,72 +14,64 @@
       <li class="main-nav__item"><a href="#">HTMLACADEMY</a></li>
     </ul>
     <label><input class="nav-check" type="chekbox" name="button" checked></label>
-    <a class="logo">
-      <img src="img/logo.png" widht="102" height="82" alt="sedona"></a>
+    <a class="logo"><img src="img/logo.png" width="102" height="82" alt="sedona"></a>
     <button class="main-nav__toggle" type="button">Меню</button>
-    <div class="content__image"><img src="http://placehold.it/320x385"></div>
-  </nav>
-</header>
-<section class="content">
-  <div class="content-text">
-    <h1>фото и видео</h1>
-    <p>не можете решиться на путешествие из-за купса? фотографии помогут забыть вам о политике и экономике.
-    </p>
+     </nav>
+  <div class="header__image"><img src="http://placehold.it/320x160"></div>
+  <div class="header-text">
+    <h1 class="header-text__title">оставьте свой отзыв</h1>
+    <p class="header-text__text"> помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
   </div>
-</section>
+</header>
 <section class="photo">
-  <div class="photo-wrapper">
     <div class="photo">
-      <div class="photo__first"></div>
+      <img class="photo__image" src="http://placehold.it/280x280" alt="Неродные просторы">
       <h4 class="photo__title">Неродные просторы</h4>
-      <p>Автор фото: Борис</p>
-      <button class="photo__btn"></button>
-      <b>1350</b>
+      <p class="photo__text">Автор фото: Борис</p>
+      <button class="photo__trumb-up"></button>
+      <b class="photo__likes">1350</b>
     </div>
-    <div class="photo-seconds">
-      <div class="photo__second"></div>
-      <h4 class="photo__title">Местная растительность</h4>
-      <p>Автор фото: Сергей</p>
-      <button class="photo__btn"></button>
-      <b>143</b>
-    </div>
-    <div class="photo-therds">
-      <div class="photo__therd"></div>
-      <h4 class="photo__title"></h4>
-      <p>Автор фото: Петр</p>
-      <button class="photo__btn"></button>
-      <b>96</b>
-    </div>
-    <div class="photo-fours"></div>
-    <div class="photo-four"></div>
+  <div class="photo">
+    <img class="photo__image" src="http://placehold.it/280x280" alt="Местная растительность">
+    <h4 class="photo__title">Местная растительность</h4>
+    <p class="photo__text">Автор фото: Сергей</p>
+    <button class="photo__trumb-up"></button>
+    <b class="photo__likes">143</b>
+  </div>
+  <div class="photo">
+    <img class="photo__image" src="http://placehold.it/280x280" alt="Дорога на север">
+    <h4 class="photo__title">Дорога на север</h4>
+    <p class="photo__text">Автор фото: перт</p>
+    <button class="photo__trumb-up"></button>
+    <b class="photo__likes">96</b>
+  </div>
+  <div class="photo">
+    <img class="photo__image" src="http://placehold.it/280x280" alt="Мост дъявола">
     <h4 class="photo__title">Мост дъявола</h4>
-    <p>Автор фото: Антон</p>
-    <button class="photo__btn"></button>
-    <b>254</b>
+    <p class="photo__text">Автор фото: Антон</p>
+    <button class="photo__trumb-up"></button>
+    <b class="photo__likes">254</b>
   </div>
   <div class="video">
-    <video controls preload="metadata" src="http://placehold.it/320x200" width="400" height="225">
-      <video controls>
-        <source src="video.mp4" type="video/mp4">
-      </video>
+    <h4 class="video__title"></h4>
+    <p class="video__text"></p>
+    <img class="video__prew" src="###">
+    <img class="video__control" src="">
+    <button class="video__reload"></button>
+    <button class="video__fullscr"></button>
+    <button class="video__cc"></button>
   </div>
 </section>
-<footer class="page-footer">
-  <div class="page-footer__wrapper">
-    <p>#VISITSEDONA</p>
-    <p class="page-footer__social">
-     <span class="social-links">
+<footer class="footer">
+  <p class="footer__text">#VISITSEDONA</p>
+  <p class="footer__social">
+    <span class="social-links">
     <a class="social-link social-link--tw" href="#">tweeter</a>
     <a class="social-link social-link--fb" href="#">facebook</a>
     <a class="social-link social-link--yt" href="#">youtube</a>
     </span>
-    </p>
-    <p class="page-footer-copyright">
-      разработано HTMLACADEMY
-    </p>
-
-  </div>
+  </p>
+  <p class="footer-copyright">разработано HTMLACADEMY</p>
 </footer>
-
 </body>
 </html>
