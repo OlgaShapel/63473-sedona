@@ -1,0 +1,41 @@
+.reason {
+  display: inline-block;
+  flex-wrap: wrap;
+  width: 320px;
+  height: 207px;
+  padding-bottom: 50px;
+  background: #81b3d2 url("/img/divider2.png") no-repeat;
+  margin-bottom: 20px;
+}
+
+.reason__title {
+  font-family: $font-family;
+  font-weight: 700;
+  color: $bg-white;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-top: 55px;
+}
+
+.reason__number {
+  font-family: $font-family;
+  font-weight: normal;
+  color: $bg-white;
+  font-size: 14px;
+  padding-top: 15px;
+}
+
+.reason__text {
+  font-family: $font-family;
+  font-weight: normal;
+  color: $bg-white;
+  font-size: 14px;
+  padding-bottom: 35px;
+}
+
+.reason__foto {
+  margin-bottom: 0;
+  width: 320px;
+  height: 260px;
+  background-size: contain, 100%;
+}

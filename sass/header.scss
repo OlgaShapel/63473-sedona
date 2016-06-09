@@ -1,0 +1,129 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 320px;
+  flex-wrap: wrap;
+}
+
+.main-nav {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-nav__items {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0;
+}
+
+.main-nav__item {
+  display: flex;
+  margin: 0;
+  list-style: none;
+  justify-content: space-around;
+  background-color: #81b3d2;
+  border-bottom: 1px solid #678fa8;
+  border-top:1px solid #9ac2db;
+
+  &:last-child {
+    border-bottom: none;
+  }
+  &:first-child {
+    border-top: none;
+  }
+}
+
+.main-nav__item {
+  a {
+    font-family: $font-family;
+    font-size: 18px;
+    padding: 15px;
+    text-decoration: none;
+    color: $bg-white;
+    font-weight: bold;
+    margin: 0;
+  }
+}
+
+.main-nav__toggle {
+  background: url("img/icon-burger.svg") no-repeat;
+  width: 22px;
+  height: 22px;
+}
+
+.main-nav__item .main-nav__item--main {
+  display: flex;
+  flex-grow: 2;
+  position: relative;
+}
+
+.main-nav__item .main-nav__item--close {
+  position: absolute;
+  left: 272px;
+  top: 6px;
+  display: flex;
+  flex-grow: 0;
+  background: url("img/icon-cross.svg") no-repeat 100% 0%;
+  width: 35px;
+  height: 35px;
+  margin-left: 0;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 230px;
+  left: 275px;
+  width: 35px;
+  height: 35px;
+}
+
+.logo {
+  width: 102px;
+  height: 82px;
+  position: absolute;
+  top: 222px;
+  left: 110px;
+  z-index: 1;
+}
+
+.header-image {
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  width: 320px;
+  height: 390px;
+  background: url("/img/text-index.png") 20px center no-repeat,
+  url("/img/divider_mobile_top.png") 0px 363px no-repeat,
+  url("/img/bg-back-mobile@1x.jpg") center no-repeat;
+}
+
+.header-text {
+  width: 250px;
+  padding: 0;
+  margin: 0 auto;
+  background: #FFFFFF;
+}
+
+.header-text__title {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.header-text__text {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 0;
+  text-transform: uppercase;
+  justify-content: space-around;
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 21px;
+}
