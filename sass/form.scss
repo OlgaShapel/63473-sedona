@@ -1,0 +1,86 @@
+.header-image__form {
+   margin-top: 60px;
+  margin-bottom: 50px;
+  width: 320px;
+  height: 160px;
+  background:
+  url("/img/divider_mobile_top.png") 0px 217px no-repeat,
+  url("/img/bg-back-mobile@1x.jpg") center no-repeat;
+}
+
+
+.form {
+  display: inline-block;
+}
+
+  .form__header {
+    font-size: 18px;
+    line-height: 26px;
+    color: #000;
+    text-transform: uppercase;
+  }
+
+ label {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333;
+    text-transform: uppercase;
+  }
+input {
+    display: inline-block;
+    background-color: rgb(242, 242, 242);
+    color: #000000;
+    border: none;
+    padding: 10px;
+  }
+
+input .form__text {
+  margin-left: 70px;
+  margin-top: 30px;
+  background-color: rgb(242, 242, 242);
+  color: #000000;
+  border: none;
+  padding: 10px;
+}
+
+
+.label {
+  position: relative;
+  padding-right: 19px;
+  font-family: $font-family;
+  text-transform: uppercase;
+}
+
+ .radio,
+  .checkbox {
+    padding-left: 79px;
+    font-family: $font-family;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+.radio::before {
+    position: absolute;
+    top: -60%;
+    left: 0;
+    content: "";
+    width: 56px;
+    height: 56px;
+    box-sizing: border-box;
+    background: rgb(242, 242, 242);
+    border: 1px solid #00DD00;
+    border-radius: 50%;
+  }
+  .check__ch::before {
+    position: absolute;
+    top: -60%;
+    left: 0;
+    content: "";
+    width: 56px;
+    height: 56px;
+    background: rgb(242, 242, 242);
+    border: 1px solid #00DD00;
+    border-radius: 4px;
+  }
+

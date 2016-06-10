@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="header">
@@ -14,10 +15,10 @@
       <li class="main-nav__item"><a href="#">HTMLACADEMY</a></li>
     </ul>
     <label><input class="nav-check" type="chekbox" name="button" checked></label>
-    <a class="logo"><img src="img/logo.png" width="102" height="82" alt="sedona"></a>
+    <a class="logo"><img src="img/logo_mobile.png" width="102" height="82" alt="sedona"></a>
     <button class="main-nav__toggle" type="button">Меню</button>
   </nav>
-  <div class="header__image"><img src="http://placehold.it/320x160"></div>
+  <div class="header-image__form"></div>
   <div class="header-text">
     <h1 class="header-text__title">Оставьте свой отзыв</h1>
     <p class="header-text__text"> Помогите нашим отлеям стать лучше! Оставьте отзыв о них, а также о поесещенных вами достопримечательностях</p>
@@ -27,25 +28,25 @@
   <form action="/echo" method="post">
     <h2 class="form__header">Представьтесь пожалуйста</h2>
     <label for="name">Имя</label>
-    <input class="form__text" type="text" id="name" name="name" placeholder="Петр">
+    <input class="form__text" type="text" id="name" name="name" placeholder="Петр"><br>
     <label for="sorname">Фамилия</label>
-    <input class="form__text" type="text" id="sorname" name="sorname" placeholder="Иванов"
+    <input class="form__text" type="text" id="sorname" name="sorname" placeholder="Иванов"><br>
     <label for="otch">Отчество</label>
-    <input class="form__text" type="text" id="otch" name="otch" placeholder="Александрович">
+    <input class="form__text" type="text" id="otch" name="otch" placeholder="Александрович"><br>
     <h2 class="form__header">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
     <label for="tel">Контактный телефон:</label>
     <input class="form__text" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}"
-           placeholder="Введите телефон">
+           placeholder="Введите телефон"><br>
     <label for="email">Электронная почта:</label>
-    <input class="form__text" type="email" id="email" name="email" placeholder="Введите e-mail">
+    <input class="form__text" type="email" id="email" name="email" placeholder="Введите e-mail"><br>
     <h2 class="form__header">Ваше общее впечатление</h2>
-    <label><input class="radio__ch" type="radio" name="pos" checked>Скорее положительное</label>
-    <label><input class="radio" type="radio" name="neg">Скорее отридательное</label>
-    <label><input class="radio" type="radio" name="noth">Затрудняюсь ответить</label>
+    <label><input class="radio__ch" type="radio" name="pos" checked>Скорее положительное</label><br>
+    <label><input class="radio" type="radio" name="neg">Скорее отридательное</label><br>
+    <label><input class="radio" type="radio" name="noth">Затрудняюсь ответить</label><br>
     <h2 class="form__header">Местные достопримечательности</h2>
-    <label><input class="check__ch" type="checkbox" name="bridge" checked>Мост дъявола</label>
-    <label><input class="check__ch" type="checkbox" name="park" checked>Слайд парк</label>
-    <label><input class="check__ch" type="checkbox" name="mount">Гора колокол</label>
+    <label><input class="check__ch" type="checkbox" name="bridge" checked>Мост дъявола</label><br>
+    <label><input class="check__ch" type="checkbox" name="park" checked>Слайд парк</label><br>
+    <label><input class="check__ch" type="checkbox" name="mount">Гора колокол</label><br>
     <label><input class="check__ch" type="checkbox" name="red" checked>Красные скалы></label>
     <h2 class="form__header">Опишите свои эмоции:</h2>
     <label><textarea class="form__text" name="text" cols="1" rows="7"
@@ -54,13 +55,17 @@
   </form>
 </section>
 <footer class="footer">
+  <div class="footer__map"></div>
   <p class="footer__text">#VISITSEDONA</p>
-  <div class="social-link">
-    <a class="social-link social-link--tw" href="#">tweeter</a>
-    <a class="social-link social-link--fb" href="#">facebook</a>
-    <a class="social-link social-link--yt" href="#">youtube</a>
+  <div class="social-links">
+    <a class="social-link social-link--tw" href="#" id="tweeter"></a>
+    <a class="social-link social-link--fb" href="#"></a>
+    <a class="social-link social-link--yt" href="#"></a>
   </div>
-  <p class="footer-copyright">разработано HTMLACADEMY</p>
+  <div class="coryright">
+    <p class="copyright-text">разработано </p>
+    <p class="copyright-logo"></p>
+  </div>
 </footer>
 </body>
 </html>
