@@ -10,7 +10,7 @@
 }
 
 .reasons__item {
-  align-content: flex-start;
+
 }
 
 .reasons__picture {
@@ -37,7 +37,8 @@
 }
 
 .reasons__title {
-  padding-top: 5px;
+  padding-top:20px;
+  padding-left: 70px;
   font-family: $font-family;
   font-weight: 700;
   color: #000000;
@@ -46,7 +47,9 @@
 }
 
 .reasons-text {
-  padding-top: 15px;
+  padding-top:20px;
+  padding-left: 70px;
+  margin-left: 40px;
   font-family: $font-family;
   font-weight: normal;
   color: #000000;
