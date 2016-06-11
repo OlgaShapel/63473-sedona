@@ -14,49 +14,101 @@
       <li class="main-nav__item"><a href="#">ФОРМА ОТЗЫВА</a></li>
       <li class="main-nav__item"><a href="#">HTMLACADEMY</a></li>
     </ul>
-    <label><input class="nav-check" type="chekbox" name="button" checked></label>
     <a class="logo"><img src="img/logo_mobile.png" width="102" height="82" alt="sedona"></a>
     <button class="main-nav__toggle" type="button">Меню</button>
   </nav>
-  <div class="header-image__fo"></div>
+  <div class="header-image__form"></div>
   <div class="header-text">
     <h1 class="header-text__title">Оставьте свой отзыв</h1>
-    <p class="header-text__text"> Помогите нашим отлеям стать лучше! Оставьте отзыв о них, а также о поесещенных вами достопримечательностях</p>
+    <p class="header-text__text"> Помогите нашим отлеям стать лучше! Оставьте отзыв о них, а также о поесещенных вами
+      достопримечательностях</p>
   </div>
 </header>
 <section class="form">
-  <form action="/echo" method="post">
-    <h2 class="form__header">Представьтесь пожалуйста</h2>
-    <label for="name">Имя</label>
-    <input class="form__text" type="text" id="name" name="name" placeholder="Петр"><br>
-    <label for="sorname">Фамилия</label>
-    <input class="form__text" type="text" id="sorname" name="sorname" placeholder="Иванов"><br>
-    <label for="otch">Отчество</label>
-    <input class="form__text" type="text" id="otch" name="otch" placeholder="Александрович"><br>
-    <h2 class="form__header">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
-    <label for="tel">Контактный телефон:</label>
-    <input class="form__text" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}"
-           placeholder="Введите телефон"><br>
-    <label for="email">Электронная почта:</label>
-    <input class="form__text" type="email" id="email" name="email" placeholder="Введите e-mail"><br>
-    <h2 class="form__header">Ваше общее впечатление</h2>
-    <label><input class="radio__ch" type="radio" name="pos" checked>Скорее положительное</label><br>
-    <label><input class="radio" type="radio" name="neg">Скорее отридательное</label><br>
-    <label><input class="radio" type="radio" name="noth">Затрудняюсь ответить</label><br>
-    <h2 class="form__header">Местные достопримечательности</h2>
-    <label><input class="check__ch" type="checkbox" name="bridge" checked>Мост дъявола</label><br>
-    <label><input class="check__ch" type="checkbox" name="park" checked>Слайд парк</label><br>
-    <label><input class="check__ch" type="checkbox" name="mount">Гора колокол</label><br>
-    <label><input class="check__ch" type="checkbox" name="red" checked>Красные скалы></label>
-    <h2 class="form__header">Опишите свои эмоции:</h2>
-    <label><textarea class="form__text" name="text" cols="1" rows="7"
-                     placeholder="Опишите подробно свои восторги"></textarea></label>
-    <button class="form__button" type="submit" name="submit" value="Отправить отзыв">Отправить отзыв</button>
+  <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="form__group">
+          <h2 class="form__header">Представьтесь пожалуйста</h2>
+      <div class="form__field  form__field--name">
+        <label for="name" class="form__label">Имя:</label>
+        <input type="text" class="form__input" name="name" id="name" placeholder="Петр">
+      </div>
+      <div class="form__field  form__field--name">
+        <label for="surname" class="form__label">Фамилия:</label>
+        <input type="text" class="form__input" name="surname" id="surname" placeholder="Иванов">
+      </div>
+      <div class="form__field  form__field--name">
+        <label for="patronymic" class="form__label">Отчество:</label>
+        <input type="text" class="form__input" name="patronymic" placeholder="Александрович">
+      </div>
+    </div>
+
+       <div class="form__group">
+         <h2 class="form__header">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+      <div class="form__field  form__field--contacts">
+        <label class="form__label  form__label--contact" for="phone-number">Контактный телефон:</label>
+        <input type="text" class="form__input  form__input--contact" name="phone number"
+               pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон"><br>
+        <span class="form__mistake">Ошибка, перепроверьте номер</span>
+      </div>
+      <div class="form__field  form__field--email">
+        <label class="form__label  form__label--contact" for="email">Электронная почта:</label>
+        <input type="text" class="form__input  form__input--contact" name="e-mail" id="email"
+               placeholder="Введите e-mail">
+      </div>
+    </div>
+      <div class="form__group">
+        <h2 class="form__header">Ваше общее впечатление:</h2>
+        <div class="form__field  form__field">
+          <input type="radio" class="form__input  form__input--radio" name="oppinion" value="Скорее положительное"
+                 id="radiof" checked>
+          <label class="form__label  form__label--radio" for="radiof" >Скорее положительное</label>
+        </div>
+        <div class="form__field">
+          <input type="radio" class="form__input  form__input--radio" name="oppinion" value="Скорее отрицательное"
+                 id="radios">
+          <label class="form__label  form__label--radio" for="radios">Скорее отрицательное</label>
+        </div>
+        <div class="form__field">
+          <input type="radio" class="form__input  form__input--radio" name="oppinion" value="Затрудняюсь ответить"
+                 id="radioth">
+          <label class="form__label  form__label--radio" for="radioth">Затрудняюсь ответить</label>
+        </div>
+      </div>
+
+
+      <div class="form__group  form__group--sights">
+        <h2 class="form__header">Посещенные достопримечательности:</h2>
+        <div class="form__field  form__field--sights">
+          <input type="checkbox" class="form__input  form__input--checkbox" name="sight" value="Мост Дьявола"
+                 id="first" checked>
+          <label class="form__label  form__label--checkbox" for="first">Мост Дьявола</label>
+        </div>
+        <div class="form__field  form__field--sights">
+          <input type="checkbox" class="form__input  form__input--checkbox" name="sight" value="Слайд-парк"
+                 id="second" checked>
+          <label class="form__label  form__label--checkbox" for="second">Слайд-парк</label>
+        </div>
+        <div class="form__field  form__field--sights">
+          <input type="checkbox" class="form__input  form__input--checkbox" name="sight" value="Гора-Колокол"
+                 id="third" checked>
+          <label class="form__label  form__label--checkbox" for="third">Гора-Колокол</label>
+        </div>
+        <div class="form__field  form__field--sights">
+          <input type="checkbox" class="form__input  form__input--checkbox" name="sight" value="Красные скалы"
+                 id="fourth">
+          <label class="form__label  form__label--checkbox" for="fourth">Красные скалы</label>
+        </div>
+      </div>
+      <h2 class="form__header">Опишите свои эмоции:</h2>
+      <textarea class="form__input  form__input--textarea" placeholder="Опишите подробно все свои восторги" rows="5"
+                name="comment"></textarea>
+       <div class="form__submit">
+      <button class="form__submit-btn  btn" type="submit">Отправить отзыв</button>
+    </div>
   </form>
 </section>
 <footer class="footer">
-  <div class="footer__map"></div>
-  <p class="footer__text">#VISITSEDONA</p>
+   <p class="footer__text">#VISITSEDONA</p>
   <div class="social-links">
     <a class="social-link social-link--tw" href="#" id="tweeter"></a>
     <a class="social-link social-link--fb" href="#"></a>

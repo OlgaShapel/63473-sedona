@@ -37,8 +37,8 @@
 }
 
 .reasons__title {
-  padding-top:20px;
-  padding-left: 70px;
+  margin-top: 10px;
+  padding-left: 65px;
   font-family: $font-family;
   font-weight: 700;
   color: #000000;
@@ -46,12 +46,10 @@
   text-transform: uppercase;
 }
 
-.reasons-text {
-  padding-top:20px;
-  padding-left: 70px;
-  margin-left: 40px;
+.reasons__text {
+  padding-left: 65px;
   font-family: $font-family;
   font-weight: normal;
   color: #000000;
-  font-size: 18px;
+  font-size: 14px;
 }

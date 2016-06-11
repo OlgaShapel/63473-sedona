@@ -1,3 +1,14 @@
+$bg-blue: #81b3d2;
+$bg-white: #ffffff;
+$bg-color: #f2f2f2;
+$font-size: 14px;
+$font-family: "PT Sans", Arial, sans-serif;
+$txt-transform: uppercase;
+$form-background: #f2f2f2;
+$form-text: #000000;
+$mobile-padding: 20px;
+
+
 @import 'header';
 @import 'reason';
 @import 'reasons';
@@ -7,18 +18,10 @@
 @import 'form';
 @import 'photo';
 
-
-$bg-blue: #81b3d2;
-$bg-white: #ffffff;
-$bg-color: #f2f2f2;
-$font-size: 14px;
-$font-family: "PT Sans", Arial, sans-serif;
-$txt-transform: uppercase;
-
 body {
   min-width: 320px;
   max-width: 320px;
-  margin: 0;
+  margin-left: 20px;
   padding: 0;
   text-transform: uppercase;
   font-family: $font-family;

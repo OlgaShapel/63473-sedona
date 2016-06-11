@@ -8,14 +8,14 @@
 }
 
 .types__title {
-  padding-top: 10px;
   color: #000000;
   font-size: 16px;
   font: $font-family;
   font-weight: 600;
 }
 
-.types_item {
+.types__item {
+  text-align: center;
   display: flex;
   flex-direction: column;
   padding: 32px;
