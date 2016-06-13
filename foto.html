@@ -3,21 +3,21 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link href="/css/style.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="header">
   <nav class="main-nav">
     <ul class="main-nav__items">
-      <li class="main-nav__item"><a href="#">ГЛАВНАЯ</a></li>
+      <li class="main-nav__item main-nav__item--main"><a href="#">ГЛАВНАЯ</a><button class="main-nav__item main-nav__item--close" type="button"></button></li>
       <li class="main-nav__item"><a href="#">ФОТО И ВИДЕО</a></li>
       <li class="main-nav__item"><a href="#">ФОРМА ОТЗЫВА</a></li>
       <li class="main-nav__item"><a href="#">HTMLACADEMY</a></li>
     </ul>
      <a class="logo"><img src="img/logo_mobile.png" width="102" height="82" alt="sedona"></a>
-    <button class="main-nav__toggle" type="button">Меню</button>
+    <button class="main-nav__toggle" type="button"></button>
   </nav>
-    <div class="header-image__fo"></div>
+    <div class="header-image__form"></div>
   <div class="header-text">
       <h1 class="header-text__title">фото и видео</h1>
     <p class="header-text__text"> не можете решиться на путешествие из-за курса? фотографии помогут забыть вам о политике и экономике</p>
@@ -63,15 +63,15 @@
   <div class="video">
     <h4 class="video__title">Все еще сомневаетесь?</h4>
     <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-    <img class="video__prew" src="img/video-mobile@1x.jpg">
+    <img class="video__prew" src="img/video-mobile@1x.jpg" >
     <div class="video__controls">
-    <div class="video__control video__control--volume">
-    </div>
-    <div class="video__tools">
-    <div class="video__tool video__tool--replay"></div>
-    <div class="video__tool video__tools--cc"></div>
-      <div class="video__tool video__tool--fullscr"></div>
+    <div class="video__control video__control--volume"></div>
+       <div class="video__tools">
+    <button class="video__tool video__tool--replay"></button>
+    <button class="video__tool video__tools--cc"></button>
+      <button class="video__tool video__tool--fullscr"></button>
   </div>
+    </div>
 </section>
 <footer class="footer">
     <p class="footer__text">#VISITSEDONA</p>
@@ -81,7 +81,7 @@
     <a class="social-link social-link--yt" href="#"></a>
   </div>
   <div class="coryright">
-    <p class="copyright-text">разработано </p>
+    <a class="copyright-text" href="#">разработано </a>
     <p class="copyright-logo"></p>
   </div>
 </footer>

@@ -8,7 +8,6 @@ $form-background: #f2f2f2;
 $form-text: #000000;
 $mobile-padding: 20px;
 
-
 @import 'header';
 @import 'reason';
 @import 'reasons';
@@ -23,7 +22,6 @@ body {
   max-width: 320px;
   padding: 0;
   margin: 0;
-  text-transform: uppercase;
   font-family: $font-family;
   font-size: 14px;
   font-weight: 400;
@@ -44,3 +42,4 @@ ul, li {
   width: 320px;
   flex-wrap: wrap;
 }
+

@@ -26,7 +26,7 @@
   justify-content: space-around;
   background-color: #81b3d2;
   border-bottom: 1px solid #678fa8;
-  border-top:1px solid #9ac2db;
+  border-top: 1px solid #9ac2db;
 
   &:last-child {
     border-bottom: none;
@@ -49,9 +49,10 @@
 }
 
 .main-nav__toggle {
-  background: url("img/icon-burger.svg") no-repeat;
+  background: url("../img/icon-menu.svg") no-repeat;
   width: 22px;
   height: 22px;
+  border: none;
 }
 
 .main-nav__item .main-nav__item--main {
@@ -66,10 +67,11 @@
   top: 6px;
   display: flex;
   flex-grow: 0;
-  background: url("img/icon-cross.svg") no-repeat 100% 0%;
+  background: url("../img/icon-cross.svg") no-repeat;
   width: 35px;
   height: 35px;
   margin-left: 0;
+  border: none;
 }
 
 .main-nav__toggle {
@@ -95,9 +97,9 @@
   margin-bottom: 50px;
   width: 320px;
   height: 390px;
-  background: url("/img/text-index.png") 20px center no-repeat,
-  url("/img/divider_mobile_top.png") 0px 363px no-repeat,
-  url("/img/bg-back-mobile@1x.jpg") center no-repeat;
+  background: url("../img/text-index.png") 20px center no-repeat,
+  url("../img/divider_mobile_top.png") 0 363px no-repeat,
+  url("../img/bg-back-mobile@1x.jpg") center no-repeat;
 }
 
 .header-text {
@@ -120,7 +122,7 @@
   margin-top: 20px;
   padding: 0;
   text-transform: uppercase;
- text-align: center;
+  text-align: center;
   font-family: PT Sans, Arial, sans-serif;
   font-size: 12px;
   font-weight: 200;

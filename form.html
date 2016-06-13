@@ -9,13 +9,13 @@
 <header class="header">
   <nav class="main-nav">
     <ul class="main-nav__items">
-      <li class="main-nav__item"><a href="#">ГЛАВНАЯ</a></li>
+      <li class="main-nav__item main-nav__item--main"><a href="#">ГЛАВНАЯ</a><button class="main-nav__item main-nav__item--close" type="button"></button></li>
       <li class="main-nav__item"><a href="#">ФОТО И ВИДЕО</a></li>
       <li class="main-nav__item"><a href="#">ФОРМА ОТЗЫВА</a></li>
       <li class="main-nav__item"><a href="#">HTMLACADEMY</a></li>
     </ul>
     <a class="logo"><img src="img/logo_mobile.png" width="102" height="82" alt="sedona"></a>
-    <button class="main-nav__toggle" type="button">Меню</button>
+    <button class="main-nav__toggle" type="button"></button>
   </nav>
   <div class="header-image__form"></div>
   <div class="header-text">
@@ -30,7 +30,7 @@
           <h2 class="form__header">Представьтесь пожалуйста</h2>
       <div class="form__field  form__field--name">
         <label for="name" class="form__label">Имя:</label>
-        <input type="text" class="form__input" name="name" id="name" placeholder="Петр">
+        <input type="text" class="form__input form__input--name" name="name" id="name" placeholder="Петр">
       </div>
       <div class="form__field  form__field--name">
         <label for="surname" class="form__label">Фамилия:</label>
@@ -38,7 +38,7 @@
       </div>
       <div class="form__field  form__field--name">
         <label for="patronymic" class="form__label">Отчество:</label>
-        <input type="text" class="form__input" name="patronymic" placeholder="Александрович">
+        <input type="text" class="form__input" name="patronymic" id="patronymic" placeholder="Александрович">
       </div>
     </div>
        <div class="form__group">
@@ -50,8 +50,8 @@
         <span class="form__mistake">Ошибка, перепроверьте номер</span>
       </div>
       <div class="form__field  form__field--email">
-        <label class="form__label  form__label--contact" for="email">Электронная почта:</label>
-        <input type="text" class="form__input  form__input--contact" name="e-mail" id="email"
+        <label class="form__label  form__label--email" for="email">Электронная почта:</label>
+        <input type="text" class="form__input  form__input--email" name="e-mail" id="email"
                placeholder="Введите e-mail">
       </div>
     </div>
