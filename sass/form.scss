@@ -115,12 +115,10 @@
 
 .form__input--checkbox:checked + label::before {
   position: absolute;
-  top: 90px;
   left: 0;
-  z-index: 4;
   content: "";
-  width: 35px;
-  height: 35px;
+  width: 22px;
+  height: 22px;
   background: $form-background url("../img/icon-tick.svg") center no-repeat;
   -webkit-background-size: 20px 20px;
   background-size: 20px 20px;
