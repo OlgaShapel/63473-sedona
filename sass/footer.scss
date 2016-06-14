@@ -1,0 +1,87 @@
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 320px;
+  margin-top: 20px;
+  flex-grow: 1;
+}
+
+.footer__map {
+  width: 320px;
+  height: 360px;
+  background: url("/img/bg-map-mobile@1x.jpg") no-repeat;
+}
+
+.footer__text {
+  display: flex;
+  padding-left: 110px;
+  color: #000000;
+  font-size: 16px;
+  font: $font-family;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.social-links {
+  padding-left: 70px;
+  width: 320px;
+  margin-top: 20px;
+ }
+
+.social-link {
+  display: inline-flex;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  background: $bg-blue;
+  vertical-align: middle;
+
+  a {
+    padding: 15px;
+    justify-content: center;
+  }
+}
+
+.social-link--fb {
+      display: inline-flex;
+      width: 40px;
+      height: 40px;
+      background: $bg-blue url("../img/icon-facebook.svg") center no-repeat;
+    }
+
+.social-link--yt {
+      display: inline-flex;
+      width: 40px;
+      height: 40px;
+      background: $bg-blue url("../img/icon-youtube.svg") center no-repeat;
+    }
+
+.social-link--tw {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  background: $bg-blue url("../img/icon-twitter.svg") center no-repeat;
+}
+
+.coryright {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.copyright-text {
+  display: flex;
+}
+
+.copyright-logo {
+  display: flex;
+  margin-left: 20px;
+  width: 50px;
+  height: 50px;
+  background: url("../img/logo-htmlacademy.svg") no-repeat;
+}

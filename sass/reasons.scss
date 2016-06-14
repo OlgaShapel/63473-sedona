@@ -1,0 +1,55 @@
+.reasons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 320px;
+  margin-top: 25px;
+  height: 420px;
+  padding-bottom: 2px;
+  background: $bg-white;
+}
+
+.reasons__item {
+
+}
+
+.reasons__picture {
+  position: relative;
+  padding-left: 25px;
+  &--home {
+    position: absolute;
+    width: 39px;
+    height: 37px;
+    background: url("/img/icon-house.png") center no-repeat;
+  }
+  &--gift {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url("/img/icon-gift.png") center no-repeat;
+  }
+  &--eat {
+    position: absolute;
+    width: 40px;
+    height: 38px;
+    background: url("/img/icon-burger.png") center no-repeat;
+  }
+}
+
+.reasons__title {
+  margin-top: 10px;
+  padding-left: 65px;
+  font-family: $font-family;
+  font-weight: 700;
+  color: #000000;
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
+.reasons__text {
+  padding-left: 65px;
+  font-family: $font-family;
+  font-weight: normal;
+  color: #000000;
+  font-size: 14px;
+}

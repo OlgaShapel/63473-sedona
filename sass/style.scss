@@ -1,0 +1,46 @@
+$bg-blue: #81b3d2;
+$bg-white: #ffffff;
+$bg-color: #f2f2f2;
+$font-size: 14px;
+$font-family: "PT Sans", Arial, sans-serif;
+$txt-transform: uppercase;
+$form-background: #f2f2f2;
+$form-text: #000000;
+$mobile-padding: 20px;
+
+@import 'normalize';
+@import 'header';
+@import 'reason';
+@import 'reasons';
+@import 'types';
+@import 'hotel';
+@import 'footer';
+@import 'form';
+@import 'photo';
+
+body {
+  min-width: 320px;
+  max-width: 320px;
+  padding: 0;
+  margin: 0;
+  font-family: $font-family;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+  background-color: $bg-white;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-main {
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  flex-wrap: wrap;
+}
+
