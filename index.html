@@ -10,9 +10,9 @@
   <nav class="main-nav">
     <ul class="main-nav__items">
       <li class="main-nav__item main-nav__item--main"><a href="#">ГЛАВНАЯ</a><button class="main-nav__item main-nav__item--close" type="button"></button></li>
-      <li class="main-nav__item"><a href="foto.html">ФОТО И ВИДЕО</a></li>
-      <li class="main-nav__item"><a href="form.html">ФОРМА ОТЗЫВА</a></li>
-      <li class="main-nav__item"><a href="www.htmlacademy.ru">HTMLACADEMY</a></li>
+      <li class="main-nav__item main-nav__item--foto"><a href="foto.html">ФОТО И ВИДЕО</a></li>
+      <li class="main-nav__item main-nav__item--form"><a href="form.html">ФОРМА ОТЗЫВА</a></li>
+      <li class="main-nav__item main-nav__item--html"><a href="www.htmlacademy.ru">HTMLACADEMY</a></li>
     </ul>
     <a class="logo"><img src="img/logo_mobile.png" width="102" height="82" alt="logo"></a>
     <button class="main-nav__toggle" type="button"></button>
@@ -24,17 +24,19 @@
   </div>
 </header>
 <section class="page-main">
-  <div class="reason">
+    <div class="reason">
+     <div class="reason-wrapper">
     <h2 class="reason__title">Настоящий городок</h2>
     <p class="reason__number">- №1 -</p>
     <p class="reason__text">Седона не атракцион для туристов, там течет своя жизнь</p>
-    <img class="reason__foto" src="img/photo-city@1x.jpg">
+     </div>
+      <img class="reason__foto" src="img/photo-city@1x.jpg">
   </div>
   <div class="reasons">
     <div class="reasons__item">
     <div class="reasons__picture reasons__picture--home"></div>
       <h3 class="reasons__title">Жилье</h3>
-      <p class="reasons__text ">Рекомендуем пожить в настоящем отеле, все как в кино</p>
+      <p class="reasons__text ">Рекомендуем пожить в настоящем мотеле, все как в кино</p>
     </div>
     <div class="reasons__item">
     <div class="reasons__picture reasons__picture--gift"></div>
@@ -48,16 +50,18 @@
     </div>
   </div>
   <div class="reason">
+    <div class="reason-wrapper">
     <h2 class="reason__title">Там есть мост дьявола</h2>
     <p class="reason__number">- №2 -</p>
     <p class="reason__text">Да, по нему можно пройти! если конечно вы осмелитесь</p>
+      </div>
     <img class="reason__foto" src="img/photo-bridge@1x.jpg">
   </div>
   <div class="types">
     <div class="types__item">
       <h3 class="types__title">небольшая площадь</h3>
       <p class="types__number">- №3 -</p>
-      <p class="types__text">Рекомендуем пожить в настоящем отеле, все как в кино</p>
+      <p class="types__text types__text--brake">Все достопримечательности находятся очень близко</p>
     </div>
     <div class="types__item">
       <h3 class="types__title">красивая дорога</h3>
@@ -78,6 +82,7 @@
 </section>
 <footer class="footer">
   <div class="footer__map"></div>
+  <div class="footer-wrap">
   <p class="footer__text">#VISITSEDONA</p>
   <div class="social-links">
     <a class="social-link social-link--tw" href="#" id="tweeter"></a>
@@ -87,6 +92,7 @@
   <div class="coryright">
   <a class="copyright-text">разработано </a>
   <p class="copyright-logo"></p>
+  </div>
   </div>
 </footer>
 </body>
