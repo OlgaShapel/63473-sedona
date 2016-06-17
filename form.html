@@ -26,8 +26,8 @@
 </header>
 <section class="form">
   <form action="https://echo.htmlacademy.ru" method="post">
-        <div class="form__group">
-          <h2 class="form__header">Представьтесь пожалуйста</h2>
+        <div class="form1__group">
+          <h2 class="form__header">Представьтесь пожалуйста:</h2>
       <div class="form__field  form__field--name">
         <label for="name" class="form__label">Имя:</label>
         <input type="text" class="form__input form__input--name" name="name" id="name" placeholder="Петр">
@@ -41,33 +41,36 @@
         <input type="text" class="form__input" name="patronymic" id="patronymic" placeholder="Александрович">
       </div>
     </div>
-       <div class="form__group">
-         <h2 class="form__header">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+       <div class="form2__group">
+         <h2 class="form__header">КОНТАКТНАЯ ИНФОРМАЦИЯ:</h2>
       <div class="form__field  form__field--contacts">
         <label class="form__label  form__label--contact" for="phone-number">Контактный телефон:</label>
         <input type="text" class="form__input  form__input--contact" name="phone number"
-               pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон"><br>
-        <span class="form__mistake">Ошибка, перепроверьте номер</span>
+               pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон">
+        <input type=button class="form__field form__field-btn">
+
+        <p class="form__mistake">Ошибка, перепроверьте номер</p>
       </div>
       <div class="form__field  form__field--email">
         <label class="form__label  form__label--email" for="email">Электронная почта:</label>
         <input type="text" class="form__input  form__input--email" name="e-mail" id="email"
                placeholder="Введите e-mail">
+        <input type=button class="form__email-btn">
       </div>
     </div>
-      <div class="form__group">
+      <div class="form3__group">
         <h2 class="form__header">Ваше общее впечатление:</h2>
         <div class="form__field  form__field">
           <input type="radio" class="form__input  form__input--radio" name="oppinion" value="Скорее положительное"
                  id="radiof" checked>
           <label class="form__label  form__label--radio" for="radiof" >Скорее положительное</label>
         </div>
-        <div class="form__field">
+        <div class="form4__field">
           <input type="radio" class="form__input  form__input--radio" name="oppinion" value="Скорее отрицательное"
                  id="radios">
           <label class="form__label  form__label--radio" for="radios">Скорее отрицательное</label>
         </div>
-        <div class="form__field">
+        <div class="form5__field">
           <input type="radio" class="form__input  form__input--radio" name="oppinion" value="Затрудняюсь ответить"
                  id="radioth">
           <label class="form__label  form__label--radio" for="radioth">Затрудняюсь ответить</label>

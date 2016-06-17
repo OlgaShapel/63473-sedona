@@ -1,12 +1,16 @@
 @media (min-width: 320px) {
   .reason {
+    margin-top: -16px;
     display: inline-block;
     flex-wrap: wrap;
     width: 100%;
-    height: 207px;
+    height: 220px;
     padding-bottom: 50px;
-    background: #81b3d2 url("../img/divider2.png") no-repeat;
+  }
 
+  .reason-wrapper {
+    text-align: center;
+    background: #81b3d2 url("../img/divider2.png") no-repeat;
   }
 
   .reason__title {
@@ -15,30 +19,92 @@
     color: $bg-white;
     font-size: 16px;
     text-transform: uppercase;
-    padding-top: 55px;
-  }
+    padding-top: 76px;
+    margin-bottom: 9px;
+
+   }
 
   .reason__number {
     text-align: center;
     font-weight: normal;
     color: $bg-white;
-    padding-top: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .reason__text {
+    display: inline-block;
     text-align: center;
     font-weight: normal;
     color: $bg-white;
-    padding-bottom: 35px;
+    width: 90%;
+    margin-top: 11px;
+    padding-bottom: 23px;
   }
 
   .reason__foto {
     margin-bottom: 0;
     width: 320px;
     height: 260px;
+
+  }
+
+
+  .reason2 {
+    margin-top: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+   }
+
+  .reason2-wrapper {
+    text-align: center;
+    background-color: $bg-blue;
+    }
+
+  .reason2__title {
+    text-align: center;
+    font-weight: 700;
+    color: $bg-white;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-top: 40px;
+    margin-bottom: 9px;
+
+  }
+
+  .reason2__number {
+    text-align: center;
+    font-weight: normal;
+    color: $bg-white;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .reason2__text {
+    display: inline-block;
+    text-align: center;
+    font-weight: normal;
+    color: $bg-white;
+    width: 90%;
+    margin-top: 11px;
+    padding-bottom: 23px;
+  }
+
+  .reason2__foto {
+    display: block;
+    margin-bottom: 0;
+    width: 320px;
+    height: 260px;
     background-size: contain, 100%;
   }
 }
+
+
+
+
+
+
 @media (min-width: 768px) {
   .reason {
     display: inline-flex;
@@ -57,14 +123,15 @@
 
   .reason__title {
    display: inline-block;
-     font-weight: 700;
+     font-weight: 600;
     color: $bg-white;
-    font-size: 16px;
+    font-size: 22px;
     text-transform: uppercase;
     padding-top: 30px;
      }
 
   .reason__number {
+    margin: 0;
     display: block;
     text-align: center;
     font-weight: normal;
@@ -78,6 +145,8 @@
     font-weight: normal;
     color: $bg-white;
     padding-bottom: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .reason__foto {
@@ -86,6 +155,23 @@
     flex-grow: 2;
     flex-basis: 67%;
     height: 256px;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .reason__title {
+    width: 50%;
+    font-size: 19px;
+    padding-top: 37px;
+
+  }
+.reason__text {
+  width: 70%;
+  letter-spacing: -0.5px;
+}
+  .reason__foto {
     background-size: cover;
   }
 }

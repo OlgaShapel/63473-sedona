@@ -5,31 +5,34 @@
     align-items: center;
 
     &__title {
-      margin-top: 20px;
+      margin-top: 34px;
       color: #000000;
-      font-size: 16px;
+      font-size: 18px;
        font-weight: 600;
     }
     &__text {
       text-align: center;
       color: #000000;
-      font-size: 14px;
+      font-size: 13px;
+      width: 85%;
+      margin-top: 5px;
 
     }
   }
 
   .hotel-button {
+    margin-top: 23px;
     background-color: $bg-blue;
-    width: 270px;
+    width: 280px;
     height: 55px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     border: none;
     outline: none;
 
     a {
       text-decoration: none;
       color: $bg-white;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 600;
     }
   }
@@ -44,28 +47,55 @@
     margin: 0 auto;
 
     &__title {
-      margin-top: 55px;
-      font-size: 22px;
+      margin-top: 57px;
+      font-size: 26px;
          }
 
     &__text {
       text-align: center;
       font-size: 14px;
-      padding: 0 5%;
+      padding: 0 9%;
+      margin-top: 10px;
 
     }
   }
 
   .hotel-button {
-    width: 90%;
-    height: 55px;
-    margin-bottom: 30px;
-    margin-top: 40px;
+    width: 85%;
+    height: 57px;
+    margin-bottom: 37px;
+    margin-top: 28px;
 
     a {
       font-size: 19px;
       font-weight: 600;
     }
   }
+
+}
+@media (min-width: 1200px) {
+  .hotel {
+
+    &__title {
+      margin-top: 57px;
+      font-size: 26px;
+    }
+
+    &__text {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 10px;
+      width: 52%;
+
+    }
+  }
+
+  .hotel-button {
+    width: 458px;
+    margin-top: 33px;
+
+  }
+
+
 
 }
