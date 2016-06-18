@@ -150,7 +150,6 @@
     font-size: 16px;
   }
 
-
   .form1__group .form__field {
     &--name {
       display: inline-block;
@@ -169,7 +168,7 @@
     border-top: 1px solid $bg-color;
     padding-top: 25px;
     margin-bottom: 30px;
-    .form__header{
+    .form__header {
       margin-bottom: 10px;
     }
   }
@@ -191,7 +190,7 @@
 
   .form__input--checkbox:checked + label::before {
     position: absolute;
-margin-top: 24px;
+    margin-top: 24px;
     margin-left: 15px;
     left: 0;
     content: "";
@@ -224,6 +223,211 @@ margin-top: 24px;
 }
 
 @media (min-width: 768px) {
+
+  .header-image__form {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 35px;
+    width: 100%;
+    height: 290px;
+    background: url("../img/text-sedona.svg") 50% 45% no-repeat/60%,
+    url("../img/bg-triangle1.png") 50% 233px no-repeat,
+    $bg-blue url("../img/back-desktop.jpg") center no-repeat;
+  }
+
+  .form__header {
+    width: 320px;
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 1;
+    font-size: 16px;
+    margin: 0 auto;
+    padding-top: 8px;
+  }
+
+  form {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .form1__group .form2__group .form3__group .form4__group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .form1__group {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 350px;
+    order: 2;
+
+    .form__header {
+      margin-top: 30px;
+      margin-bottom: 36px;
+    }
+    .form__field--name {
+      padding-left: 60px;
+    }
+  }
+  .form2__group {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 767px;
+    order: 3;
+    padding-top: 55px;
+    margin-bottom: 2px;
+    .form__header {
+      font-size: 20px;
+      padding-bottom: 25px;
+    }
+  }
+
+  .form__field--contacts {
+    width: auto;
+  }
+
+  .form__label--contact {
+    width: 100%;
+    padding-left: 50px;
+    margin-bottom: 5px;
+  }
+  .form__input--contact {
+    width: 560px;
+    margin-left: 40px;
+  }
+  input.form__field-btn {
+    left: 627px;
+  }
+  .form__mistake {
+    position: absolute;
+    top: 0;
+    left: 474px;
+  }
+  .form__field--email {
+    position: relative;
+    font-size: 13px;
+    margin-top: 9px;
+  }
+
+  .form__label--email {
+    padding-left: 60px;
+    width: 100%;
+  }
+  .form__input--email {
+    width: 560px;
+    margin-left: 40px;
+  }
+  .form__field .form__email-btn {
+    left: 627px;
+  }
+
+  .form3__group {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 350px;
+    order: 1;
+
+    .form__header {
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 47px;
+    }
+    .form__label--radio {
+      line-height: 78px;
+      padding-left: 115px;
+      font-weight: 400;
+
+    }
+  }
+
+  .form__group1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 767px;
+    order: 5;
+    .form__header {
+      width: 100%;
+      display: block;
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form__field--sights {
+      display: block;
+      width: 300px;
+      margin-top: 45px;
+    }
+  }
+
+  .form__input--checkbox {
+    display: none;
+    margin: 0 0 23px;
+  }
+
+  .form__label--checkbox {
+    margin-left: 78px;
+    font-size: 16px;
+    padding: 20px;
+    text-transform: none;
+    line-height: 53px;
+    font-weight: 600;
+  }
+
+  .form__input--checkbox:checked + label::before {
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 153px;
+  }
+
+  .form__group2 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 767px;
+    order: 6;
+    .form__header {
+      margin-top: 30px;
+      font-size: 20px;
+    }
+    .form__input--textarea {
+      width: 618px;
+      height: 125px;
+      margin-top: 55px;
+      margin-left: 15px;
+      padding-top: 20px;
+    }
+  }
+
+  .form4__group {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 767px;
+    order: 4;
+  }
+
+  .form__submit {
+    display: flex;
+    order: 6;
+    height: 142px;
+  }
+  .form__submit-btn {
+    margin-top: 22px;
+    margin-left: 13px;
+     width: 325px;
+    height: 58px;
+     border: none;
+    outline: none;
+  }
+
 
 }
 
