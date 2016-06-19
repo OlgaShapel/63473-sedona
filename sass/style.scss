@@ -8,8 +8,6 @@ $form-background: #f2f2f2;
 $form-text: #000000;
 $mobile-padding: 20px;
 
-
-
 @import 'normalize';
 @import 'header';
 @import 'reason';
@@ -20,10 +18,7 @@ $mobile-padding: 20px;
 @import 'form';
 @import 'photo';
 
-@media (min-width: 320px){
 body {
- width: 100%;
-  max-width: 767px;
   min-width: 320px;
   padding: 0;
   margin: 0 auto;
@@ -42,12 +37,17 @@ ul, li {
   margin: 0;
 }
 
-.page-main {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  flex-wrap: wrap;
-}
+@media (min-width: 320px) {
+  body {
+       min-width: 767px;
+
+  }
+  .page-main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 768px) {
@@ -56,32 +56,33 @@ ul, li {
     margin: 0 auto;
   }
   section {
-
+background-color: $bg-white;
   }
 
 }
+
 @media (min-width: 1200px) {
 
   body {
     min-width: 1210px;
-    max-width: 1400px;
+    max-width: 1220px;
     width: 100%;
     background-color: $form-background;
     margin: 0 auto;
   }
-img {
-  max-width: 100%;
-  height: auto;
-}
-section {
-  width: 1200px;
-  background-color: $bg-white;
-  margin: 0 auto;
-}
-footer {
-  width: 100%;
-  background-color: $bg-white;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  section {
+    width: 1200px;
+    background-color: $bg-white;
+    margin: 0 auto;
+  }
+  footer {
+    width: 100%;
+    background-color: $bg-white;
 
-}
+  }
 }
 

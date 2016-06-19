@@ -232,11 +232,11 @@
     height: 290px;
     background: url("../img/text-sedona.svg") 50% 45% no-repeat/60%,
     url("../img/bg-triangle1.png") 50% 233px no-repeat,
-    $bg-blue url("../img/back-desktop.jpg") center no-repeat;
+    $bg-blue url("../img/back-desktop.jpg") center no-repeat/100%;
   }
 
   .form__header {
-    width: 320px;
+    width: 100%;
     text-transform: uppercase;
     color: #000000;
     opacity: 1;
@@ -250,9 +250,11 @@
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .form {
+    margin: 0 auto;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -266,7 +268,7 @@
   .form1__group {
     display: flex;
     flex-direction: column;
-    flex-basis: 350px;
+    flex-basis: 50%;
     order: 2;
 
     .form__header {
@@ -332,7 +334,7 @@
   .form3__group {
     display: flex;
     flex-direction: column;
-    flex-basis: 350px;
+    flex-basis: 50%;
     order: 1;
 
     .form__header {
@@ -344,7 +346,6 @@
       line-height: 78px;
       padding-left: 115px;
       font-weight: 400;
-
     }
   }
 
@@ -427,12 +428,20 @@
      border: none;
     outline: none;
   }
-
-
 }
 
 @media (min-width: 1200px) {
-
+.header-image__form {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 35px;
+  width: 100%;
+  height: 305px;
+  background-size: 100%;
+  background: url("../img/text-sedona.svg") 51% 45% no-repeat/37%,
+  url("../img/bg-triangle1.png") 50% 215px no-repeat/100%,
+  $bg-blue url("../img/back-desktop.jpg") center no-repeat/100%;
+}
 }
 
 

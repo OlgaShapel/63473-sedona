@@ -5,6 +5,8 @@
     flex-grow: 1;
     flex-basis: 320px;
     background-color: #eeeeee;
+    padding-top: 50px;
+    margin-top: 196px;
   }
 
   .types__title {
@@ -46,6 +48,7 @@
     flex-grow: 1;
     flex-basis: 100%;
     background-color: #eeeeee;
+    margin-top: 0;
   }
 
   .types__item {
@@ -85,6 +88,7 @@
 @media (min-width: 1200px) {
   .types {
     height: 255px;
+    margin-top: 0;
   }
 
   .types__item {
