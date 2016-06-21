@@ -18,7 +18,7 @@
     <button class="main-nav__toggle" type="button"></button>
   </nav>
   <div class="header-image__form"></div>
-  <div class="header-text">
+  <div class="header-text--form">
     <h1 class="header-text__title">Оставьте свой отзыв</h1>
     <p class="header-text__text"> Помогите нашим отлеям стать лучше! Оставьте отзыв о них, а также о поесещенных вами
       достопримечательностях</p>
@@ -26,8 +26,8 @@
 </header>
 <section class="form">
   <form action="https://echo.htmlacademy.ru" method="post">
-        <div class="form1__group">
-          <h2 class="form__header">Представьтесь пожалуйста:</h2>
+        <div class="form__group--name">
+          <h2 class="form__header">Представьтесь <span class="mobile-hidden">пожалуйста</span>:</h2>
       <div class="form__field  form__field--name">
         <label for="name" class="form__label">Имя:</label>
         <input type="text" class="form__input form__input--name" name="name" id="name" placeholder="Петр">
@@ -41,10 +41,10 @@
         <input type="text" class="form__input" name="patronymic" id="patronymic" placeholder="Александрович">
       </div>
     </div>
-       <div class="form2__group">
+       <div class="form__group--contact">
          <h2 class="form__header">КОНТАКТНАЯ ИНФОРМАЦИЯ:</h2>
       <div class="form__field  form__field--contacts">
-        <label class="form__label  form__label--contact" for="phone-number">Контактный телефон:</label>
+        <label class="form__label  form__label--contact" for="phone-number"><span class="phone-hidden">Контактный</span></span> телефон:</label>
         <input type="text" class="form__input  form__input--contact" name="phone number"
                pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон">
         <input type=button class="form__field form__field-btn">
@@ -58,25 +58,25 @@
         <input type=button class="form__email-btn">
       </div>
     </div>
-      <div class="form3__group">
+      <div class="form__group--radio">
         <h2 class="form__header">Ваше общее впечатление:</h2>
-        <div class="form__field  form__field">
+        <div class="form__field">
           <input type="radio" class="form__input  form__input--radio" name="oppinion" value="Скорее положительное"
                  id="radiof" checked>
           <label class="form__label  form__label--radio" for="radiof" >Скорее положительное</label>
         </div>
-        <div class="form4__field">
+        <div class="form__field">
           <input type="radio" class="form__input  form__input--radio" name="oppinion" value="Скорее отрицательное"
                  id="radios">
           <label class="form__label  form__label--radio" for="radios">Скорее отрицательное</label>
         </div>
-        <div class="form5__field">
+        <div class="form__field">
           <input type="radio" class="form__input  form__input--radio" name="oppinion" value="Затрудняюсь ответить"
                  id="radioth">
           <label class="form__label  form__label--radio" for="radioth">Затрудняюсь ответить</label>
         </div>
       </div>
-      <div class="form__group1">
+      <div class="form__group--check">
         <h2 class="form__header">Посещенные достопримечательности:</h2>
         <div class="form__field  form__field--sights">
           <input type="checkbox" class="form__input  form__input--checkbox" name="sight" value="Мост Дьявола"
@@ -99,13 +99,14 @@
           <label class="form__label  form__label--checkbox" for="fourth">Красные скалы</label>
         </div>
       </div>
-    <div class="form__group2">
+    <div class="form__group--write">
       <h2 class="form__header">Опишите свои эмоции:</h2>
       <textarea class="form__input  form__input--textarea" placeholder="Опишите подробно все свои восторги" rows="5"
                 name="comment"></textarea>
 
        <div class="form__submit">
       <button class="form__submit-btn" type="submit">Отправить отзыв</button>
+         <span class="form__mobile-hidden"> * - Обязательные поля</span>
     </div>
     </div>
   </form>

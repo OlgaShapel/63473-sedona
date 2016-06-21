@@ -79,7 +79,7 @@
       padding-left: 25px;
       &--home {
         position: inherit;
-        margin-left: 30%;
+        margin: 0 auto;
         width: 75px;
         height: 75px;
         background: url("../img/icon-house.svg") center no-repeat/70px;
@@ -88,7 +88,7 @@
       }
       &--gift {
         position: inherit;
-        margin-left: 30%;
+        margin: 0 auto;
         width: 75px;
         height: 75px;
         background: url("../img/icon-gift.svg") center no-repeat;
@@ -97,7 +97,7 @@
       }
       &--eat {
         position: inherit;
-        margin-left: 30%;
+        margin: 0 auto;
         width: 75px;
         height: 75px;
         background: url("../img/icon-burger.svg") center no-repeat;

@@ -44,8 +44,8 @@
 
   .reason__foto {
     margin-bottom: 0;
-    width: 320px;
-    height: 260px;
+    width: 100%;
+    height: auto;
 
   }
   .reason2 {
@@ -94,8 +94,8 @@
   .reason2__foto {
     display: block;
     margin-bottom: 0;
-    width: 320px;
-    height: 260px;
+    width: 100%;
+    height: auto;
     background-size: contain, 100%;
   }
 }

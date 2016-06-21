@@ -105,12 +105,12 @@
     background-size: cover;
   }
   .footer .footer-wrap {
+    margin: 0;
     display: flex;
     flex-wrap: nowrap;
     align-items: baseline;
     flex-direction: row;
     flex-basis: 100%;
-    margin: 10px;
     flex-grow: 1;
     padding-left: 30px;
     padding-right: 30px;
@@ -121,6 +121,7 @@
     color: #000000;
     font-size: 19px;
     padding-left: 20px;
+    width: 150px;
 
   }
   .social-link {
@@ -156,10 +157,14 @@
     height: 45px;
     background: $bg-blue url("../img/icon-twitter.svg") center no-repeat;
   }
+  .coryright{
+    margin-top: 40px;
+
   .copyright-text {
     display: inline-block;
     text-align: center;
     font-size: 14px;
+    margin-left: 36px;
   }
 
   .copyright-logo {
@@ -169,46 +174,43 @@
     width: 45px;
     height: 40px;
   }
+  }
 }
 
 @media (min-width: 1200px) {
-  .footer {
-    display: block;
-    flex-direction: row;
-    justify-content: space-between;
-  }
 
-  .footer__map {
-    margin-top: 0px;
-    display: block;
-    height: 350px;
-    background: $bg-blue url("/img/bg-map-mobile@1x.jpg") center no-repeat;
-    background-size: cover;
-  }
-  .footer .footer-wrap {
+    .footer-wrap {
     display: flex;
     flex-wrap: nowrap;
     align-items: baseline;
     flex-direction: row;
-    flex-basis: 100%;
-    margin: 10px;
+    flex-basis: 1200px;
+    margin: 0;
     flex-grow: 1;
     padding-left: 30px;
     padding-right: 30px;
   }
 
   .footer__text {
-    text-align: center;
+    text-align: left;
+    align-content: center;
     color: #000000;
     font-size: 19px;
-    padding-left: 20px;
+    padding-left: 120px;
+    width: 15%;
 
   }
-  .social-link {
+  .social-links {
     display: inline-block;
+    width: 800px;
+    margin-left: -90px;
+    flex-grow: 1;
+  }
+
+  .social-link {
+
     margin: 0;
-    width: 45px;
-    height: 45px;
+    align-self: center;
     background: $bg-blue;
     vertical-align: middle;
 
@@ -238,10 +240,13 @@
     height: 45px;
     background: $bg-blue url("../img/icon-twitter.svg") center no-repeat;
   }
+
+  .coryright {
+    width: 15%;
+  }
+
   .copyright-text {
-    display: inline-block;
-    text-align: center;
-    font-size: 14px;
+display: inline-block;
   }
 
   .copyright-logo {

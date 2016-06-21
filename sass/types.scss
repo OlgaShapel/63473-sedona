@@ -10,16 +10,15 @@
   }
 
   .types__title {
-    display: inline-block;
+
     color: #000000;
     font-size: 16px;
-    font: $font-family;
     font-weight: 600;
     margin-top: 25px;
     margin-bottom: 10px;
   }
 .types__number{
-  display: inline-block;
+
   margin-top: 0;
 }
 
@@ -32,8 +31,7 @@
   }
 
   .types__text {
-    display: inline-block;
-    text-align: center;
+       text-align: center;
     margin: 0 auto;
     padding-bottom: 20px;
     border-bottom: 1px solid #d6d6d6;
@@ -52,7 +50,7 @@
   }
 
   .types__item {
-    text-align: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
     height: 190px;
@@ -66,7 +64,7 @@
     color: #000000;
     font-size: 20px;
     font-weight: 600;
-    width: 67%;
+    width: 62%;
     padding-left: 8px;
   }
   .types__number {
