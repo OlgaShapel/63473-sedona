@@ -2,10 +2,10 @@
   display: block;
   margin-top: 60px;
   margin-bottom: 28px;
-  width: 320px;
+  width: 100%;
   height: 156px;
   background: url("../img/text-sedona.svg") 50% 41% no-repeat/73%,
-  url("../img/divider_mobile_top.png") 0 129px no-repeat,
+  url("../img/divider_mobile_top.png") 0 125px no-repeat/100%,
   url("../img/bg-back-mobile@1x.jpg") center no-repeat;
 }
 
@@ -264,7 +264,7 @@ input.form__field-btn {
     width: 100%;
     height: 290px;
     background: url("../img/text-sedona.svg") 50% 45% no-repeat/60%,
-    url("../img/bg-triangle1.png") 50% 233px no-repeat,
+    url("../img/bg-triangle1.png") 50% 235px no-repeat,
     $bg-blue url("../img/back-desktop.jpg") center no-repeat/100%;
   }
 
@@ -550,7 +550,7 @@ input.form__field-btn {
     height: 305px;
     background-size: 100%;
     background: url("../img/text-sedona.svg") 51% 45% no-repeat/37%,
-    url("../img/bg-triangle1.png") 50% 215px no-repeat/100%,
+    url("../img/bg-triangle1.png") 50% 216px no-repeat/100%,
     $bg-blue url("../img/back-desktop.jpg") center no-repeat/100%;
   }
   .form__group--radio .form__header {

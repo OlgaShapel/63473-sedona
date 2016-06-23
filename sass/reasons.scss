@@ -83,14 +83,14 @@
       }
       &--gift {
         position: inherit;
-        margin-left: 54px;
+        margin: 0 auto;
         width: 75px;
         height: 75px;
         background: url("../img/icon-gift.svg") center no-repeat/65%;
       }
       &--eat {
         position: inherit;
-        margin-left: 72px;
+        margin: 0 auto;
         width: 75px;
         height: 75px;
         background: url("../img/icon-burger.svg") center no-repeat/80%;
@@ -157,28 +157,28 @@
     }
     &--gift {
       position: inherit;
-      margin-left: 114px;
+      margin: 0 auto;
       width: 75px;
       height: 75px;
       background: url("../img/icon-gift.svg") center no-repeat/65%;
     }
     &--eat {
       position: inherit;
-      margin-left: 145px;
+      margin: 0 auto;
       width: 75px;
       height: 75px;
       background: url("../img/icon-burger.svg") center no-repeat/80%;
     }
   }
   .reasons__text {
-    width: 65%;
+    width: 66%;
     margin-top: 0;
     display: inline-block;
     padding: 6% 15%;
     text-align: center;
     font-weight: normal;
     color: #000000;
-    font-size: 12px;
+    font-size: 13px;
     order: 3;
     line-height: 20px;
   }

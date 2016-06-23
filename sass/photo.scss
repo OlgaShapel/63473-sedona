@@ -1,17 +1,38 @@
-@media (min-width: 320px) {
-  .page-main {
-    margin-top: 50px auto;
-
-  }
-
-  .photo .photo1 {
+    .photo  {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 70%;
     flex-basis: 320px;
-    margin: 20px;
+    margin: 15%;
+        border-top: 2px solid $form-background;
+    padding-top: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .photo--one  {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 20px;
     border-top: 2px solid $form-background;
     padding-top: 20px;
+    margin-bottom: 0;
+  }
+  .photo--last  {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 15%;
+    border-top: 2px solid $form-background;
+    padding-top: 12px;
+    margin-top: 0;
+    margin-bottom: 5px;
   }
 
   .photo__title {
@@ -20,9 +41,8 @@
     flex-wrap: wrap;
     font-weight: 700;
     color: #000000;
-    font-size: 16px;
-    text-transform: uppercase;
-    text-align: left;
+    font-size: 12px;
+      text-align: left;
     margin-bottom: 2px;
   }
 
@@ -31,13 +51,14 @@
     font-family: $font-family;
     font-weight: normal;
     color: #000000;
-    font-size: 16px;
+    font-size: 12px;
     text-align: left;
-
+    text-transform: none;
+  margin-top: 0;
+    margin-bottom: 0;
   }
 
   .photo__button {
-    display: inline-flex;
 
   }
 
@@ -46,7 +67,7 @@
     width: 40px;
     height: 40px;
     border: none;
-    background: url("../img/icon-like.svg") center no-repeat;
+    background: url("../img/icon-like1.svg") center no-repeat;
   }
 
   .photo__likes {
@@ -62,7 +83,10 @@
     flex-direction: column;
     flex-wrap: nowrap;
     position: relative;
-    width: 320px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  margin-bottom: 62px;
 
     &__title {
       font-family: $font-family;
@@ -88,7 +112,6 @@
       text-align: center;
       padding: 20px;
     }
-
   }
 
   .video__prew img {
@@ -103,6 +126,7 @@
   }
 
   .video__control--volume {
+    position: relative;
     margin-top: -45px;
     margin-left: 20px;
     width: 280px;
@@ -123,13 +147,14 @@
     }
 
     &:after {
+      position: absolute;
       content: "";
-      margin-top: -80px;
-      margin-left: 50px;
+      top: 18px;
+      left: 80px;
       display: inline-block;
       order: 4;
-      width: 15px;
-      height: 15px;
+      width: 9px;
+      height: 9px;
       background: $bg-white;
       border-radius: 50%;
     }
@@ -174,7 +199,7 @@
     font-size: 16px;
     margin-top: 15px;
   }
-}
+
 
 @media (min-width: 768px) {
   .page-main {
@@ -183,29 +208,32 @@
     justify-content: center;
   }
 
-  .photo1 {
-    display: flex;
-    justify-content: space-around;
+  .photo--one {
+    display: block;
+    flex-direction: row;
+    align-content: stretch;
     flex-wrap: wrap;
-    width: 650px;
+    width: 100%;
     height: 400px;
-    flex-basis: 650px;
+    flex-basis: 71%;
     margin: 0 auto;
-    padding-top: 0px;
+    padding-top: 0;
     padding-bottom: 90px;
     background-color: $form-background;
+    position: relative;
     img {
       width: 100%;
       height: 400px;
     }
     .photo__title {
-      display: flex;
-      width: 500px;
+     display: inline-block;
+      width: 250px;
       font-size: 18px;
       order: 1;
+      margin-right: 0;
     }
     .photo__text {
-      display: block;
+      display: inline-block;
       width: 100%;
       text-transform: none;
       order: 3;
@@ -213,10 +241,12 @@
       margin-top: 0;
     }
     .photo__button {
-      display: flex;
+      position: absolute;
+      display: inline-block;
       order: 2;
       padding-top: 20px;
-
+      top: 395px;
+      left: 480px;
     }
   }
 
@@ -225,9 +255,58 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-content: stretch;
-    flex-basis: 323px;
+    flex-basis: 35.5%;
     padding-top: 0;
     background-color: $form-background;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    img {
+      width: 100%;
+      height: 270px;
+    }
+
+    .photo__title {
+      display: flex;
+      width: 210px;
+      font-size: 14px;
+      font-weight: 600;
+      order: 1;
+      padding-left: 20px;
+      margin-top: 10px;
+      font-stretch: semi-condensed;
+    }
+    .photo__text {
+      display: block;
+      margin: 0;
+      width: 100%;
+      text-transform: none;
+      order: 3;
+      padding-left: 20px;
+      font-size: 12px;
+
+    }
+    .photo__button {
+      display: flex;
+      order: 2;
+      padding-top: 20px;
+    }
+  }
+
+  .photo--last {
+    display: flex;
+   flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 100%;
+    flex-basis: 35.5%;
+    padding-top: 0;
+    background-color: $form-background;
+    margin-left: -5%;
+    margin-right: 30%;
+    margin-top: 0;
 
     img {
       width: 100%;
@@ -260,6 +339,7 @@
       padding-top: 20px;
     }
   }
+
   .video {
     display: flex;
     flex-direction: column;
@@ -300,12 +380,12 @@
 
     &:after {
       content: "";
-      margin-top: 38px;
-      margin-left: -150px;
+      margin-top: 23px;
+      margin-left: 100px;
       display: inline-block;
       order: 4;
-      width: 15px;
-      height: 15px;
+      width: 10px;
+      height: 10px;
       background: $bg-white;
       border-radius: 50%;
       position: absolute;
@@ -354,21 +434,37 @@
     font-size: 16px;
     margin-top: 15px;
   }
-
 }
 
 @media (min-width: 1200px) {
 
-  .photo1 {
+  .header-text--foto {
+
+    .header-text__title{
+      margin-top: 75px;
+      font-size: 27px;
+      display: block;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .header-text__text {
+      font-size: 14px;
+      width: 40%;
+      margin: 0 auto;
+    }
+  }
+
+  .photo--one {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
     height: 400px;
-    flex-basis: 1200px;
-    margin: 0;
+    flex-basis: 1210px;
+    margin: 0 auto;
     padding-top: 0;
     padding-bottom: 0;
+    margin-top: 68px;
 
 
     img {
@@ -384,18 +480,19 @@
       display: inline-block;
       position: absolute;
       z-index: 2;
-      width: 1200px;
+      width: 100%;
       height: 80px;
       background: #000000;
       opacity: 0.5;
     }
     .photo__button {
-      margin-top: -90px;
+          margin-top: -90px;
       margin-right: 20px;
       z-index: 4;
-      align-self: flex-end;
+      left: 90%
+
     }
-    .photo__likes{
+    .photo__likes {
       color: $bg-white;
     }
     .photo__text {
@@ -420,17 +517,15 @@
     flex-wrap: wrap;
     width: 400px;
     height: 265px;
-    flex-basis: 323px;
+    flex-basis: 33%;
     padding-top: 0;
     padding-bottom: 0;
     flex-grow: 1;
-
 
     img {
       width: 100%;
       height: 270px;
       background-size: contain;
-
 
     }
     &:before {
@@ -451,7 +546,7 @@
       z-index: 4;
       align-self: flex-end;
     }
-    .photo__likes{
+    .photo__likes {
       color: $bg-white;
     }
     .photo__text {
@@ -471,6 +566,143 @@
       align-self: flex-start;
     }
 
+  }
+.photo--last {
+  margin-left: 0;
+  margin-right: 0;
+  flex-basis: 33%;
+  &:before {
+    content: "";
+    margin-top: 190px;
+    margin-left: 0;
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    width: 400px;
+    height: 80px;
+    background: #000000;
+    opacity: 0.35;
+  }
+  .photo__button {
+    margin-top: -90px;
+    margin-right: 20px;
+    z-index: 4;
+    align-self: flex-end;
+  }
+  .photo__likes {
+    color: $bg-white;
+  }
+  .photo__text {
+    color: $bg-white;
+    margin-top: -32px;
+    z-index: 2;
+    font-size: 14px;
+  }
+  .photo__title {
+    color: $bg-white;
+    margin-top: -60px;
+    width: 170px;
+    padding-left: 0;
+    z-index: 2;
+    font-size: 14px;
+    margin-left: 20px;
+    align-self: flex-start;
+  }
+}
+  .photo__trumb-up {
+    padding-top: 10px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: url("../img/icon-like.svg") center no-repeat;
+  }
+  .video__title {
+    font-size: 25px;
+    padding-top: 12px;
+  }
+  .video {
+    margin-left: 0;
+    .video__prew {
+      position: relative;
+      width: 800px;
+      height: 500px;
+      order: 1;
+    }
+  }
+  .video__tools {
+    margin-left: 0;
+    top: 487px;
+    position: relative;
+    width: 800px;
+    height: 65px;
+    background: none;
+
+    &--replay {
+      position: relative;
+      top: 480px;
+      width: 50px;
+      height: 50px;
+      margin-left: 25px;
+      margin-top: 2px;
+      border: none;
+      background: url("../img/icon-video-replay.svg") center no-repeat;
+    }
+
+    &--cc {
+      width: 50px;
+      height: 60px;
+      margin-left: 600px;
+      border: none;
+      background: url("../img/icon-video-subtitles.svg") center no-repeat;
+    }
+
+    &--fullscr {
+      width: 50px;
+      height: 60px;
+      margin-left: 10px;
+      margin-right: 30px;
+      border: none;
+      background: url("../img/icon-video-fullscreen.svg") center no-repeat;
+    }
+  }
+  .video__control--volume {
+    position: absolute;
+    margin-top: 472px;
+    margin-left: 0;
+    width: 800px;
+    height: 92px;
+    background: #000000;
+    opacity: 0.55;
+    order: 1;
+
+    &:before {
+      content: "";
+      margin-top: 44px;
+      margin-left: 98px;
+      display: inline-block;
+      order: 2;
+      width: 550px;
+      height: 3px;
+      background: $bg-white;
+      position: relative;
+      opacity: 0.65;
+    }
+
+    &:after {
+      content: "";
+      margin-top: 23px;
+      margin-left: 100px;
+      display: inline-block;
+      order: 4;
+      width: 10px;
+      height: 10px;
+      background: $bg-white;
+      border-radius: 50%;
+      position: absolute;
+    }
+  }
+  .footer .footer-wrap {
+    margin-top: 0;
   }
 
 }
