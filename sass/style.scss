@@ -20,12 +20,12 @@ $mobile-padding: 20px;
 
 body {
   min-width: 320px;
-  max-width: 320px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   font-family: $font-family;
   font-size: 14px;
   font-weight: 400;
+  text-transform: uppercase;
   line-height: 24px;
   color: #000;
   background-color: $bg-white;
@@ -37,10 +37,51 @@ ul, li {
   margin: 0;
 }
 
-.page-main {
-  margin: 0;
-  padding: 0;
-  width: 320px;
-  flex-wrap: wrap;
+@media (min-width: 320px) {
+  body {
+       min-width: 320px;
+
+  }
+  .page-main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    min-width: 768px;
+    margin: 0 auto;
+  }
+  section {
+background-color: $bg-white;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  body {
+    min-width: 1210px;
+    max-width: 1220px;
+    width: 100%;
+    background-color: $form-background;
+    margin: 0 auto;
+  }
+  img {
+     height: auto;
+  }
+  section {
+    width: 1200px;
+    background-color: $bg-white;
+    margin: 0 auto;
+  }
+  footer {
+    width: 100%;
+    background-color: $bg-white;
+
+  }
 }
 
