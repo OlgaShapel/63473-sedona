@@ -14,7 +14,13 @@
       <li class="main-nav__item main-nav__item--form"><a href="form.html">ФОРМА ОТЗЫВА</a></li>
       <li class="main-nav__item"><a href="#">HTMLACADEMY</a></li>
     </ul>
-    <a class="logo"><img src="img/logo_mobile.png" width="102" height="82" alt="sedona"></a>
+    <a class="logo">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+        <img src="img/logo-sedona-mobile.svg" width="188" height="96" alt="City of Sedona">
+      </picture>
+    </a>
     <button class="main-nav__toggle" type="button"></button>
   </nav>
   <div class="header-image__form"></div>
@@ -25,17 +31,42 @@
 </header>
 <section class="page-main">
   <div class="photo--one">
-    <img class="photo__image photo__image--strange" src="img/photo-1-mobile@1x.jpg" alt="Неродные просторы">
+          <picture>
+        <source media="(min-width: 1200px)"
+                srcset="img/photo-1-desktop@1x.jpg 1x,
+                                                img/photo-1-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)"
+                srcset="img/photo-1-tablet@1x.jpg 1x,
+                                                img/photo-1-tablet@2x.jpg 2x">
+        <img class="photo__image photo__image--strange" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Неродные просторы">
+      </picture>
     <h4 class="photo__title">Неродные просторы</h4>
     <p class="photo__text">Автор фото: Борис</p>
     <div class="photo__button">
-      <button class="photo__trumb-up"></button>
+      <button class="photo__trumb-up">
+        <picture>
+          <source media="(min-width: 1200px)"
+                  srcset="img/icon-like-desktop.svg">
+          <source media="(min-width: 768px)"
+                  srcset="img/icon-like-tablet.svg">
+          <img src="img/icon-like.svg" width="22" height="21" alt="">
+        </picture>
+
+      </button>
       <b class="photo__likes">1350</b>
     </div>
   </div>
   <div class="photo">
-    <img class="photo__image" src="img/photo-2-mobile@1x.jpg" alt="Местная растительность">
-    <h4 class="photo__title">Местная растительность</h4>
+    <picture>
+      <source media="(min-width: 1200px)"
+              srcset="img/photo-2-desktop@1x.jpg 1x,
+                                                img/photo-2-desktop@2x.jpg 2x">
+      <source media="(min-width: 768px)"
+              srcset="img/photo-2-tablet@1x.jpg 1x,
+                                                img/photo-2-tablet@2x.jpg 2x">
+      <img class="photo__image" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Местная растительность">
+    </picture>
+     <h4 class="photo__title">Местная растительность</h4>
     <p class="photo__text">Автор фото: Сергей</p>
     <div class="photo__button">
       <button class="photo__trumb-up"></button>
@@ -43,8 +74,16 @@
     </div>
   </div>
   <div class="photo">
-    <img class="photo__image" src="img/photo-3-mobile@1x.jpg" alt="Дорога на север">
-    <h4 class="photo__title">Дорога на север</h4>
+    <picture>
+      <source media="(min-width: 1200px)"
+              srcset="img/photo-3-desktop@1x.jpg 1x,
+                                                img/photo-3-desktop@2x.jpg 2x">
+      <source media="(min-width: 768px)"
+              srcset="img/photo-3-tablet@1x.jpg 1x,
+                                                img/photo-3-tablet@2x.jpg 2x">
+      <img class="photo__image" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Дорога на север">
+    </picture>
+     <h4 class="photo__title">Дорога на север</h4>
     <p class="photo__text">Автор фото: Петр</p>
     <div class="photo__button">
       <button class="photo__trumb-up"></button>
@@ -52,7 +91,15 @@
     </div>
   </div>
   <div class="photo--last">
-    <img class="photo__image" src="img/photo-4-mobile@1x.jpg" alt="Мост дъявола">
+    <picture>
+      <source media="(min-width: 1200px)"
+              srcset="img/photo-4-desktop@1x.jpg 1x,
+                                                img/photo-4-desktop@2x.jpg 2x">
+      <source media="(min-width: 768px)"
+              srcset="img/photo-4-tablet@1x.jpg 1x,
+                                                img/photo-4-tablet@2x.jpg 2x">
+      <img class="photo__image" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Мост дьявола">
+    </picture>
     <h4 class="photo__title">Мост дъявола</h4>
     <p class="photo__text">Автор фото: Антон</p>
     <div class="photo__button">
@@ -71,6 +118,7 @@
         <button class="video__tool video__tools--cc"></button>
         <button class="video__tool video__tool--fullscr"></button>
       </div>
+    </div>
     </div>
 </section>
 <footer class="footer">

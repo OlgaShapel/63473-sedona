@@ -294,6 +294,10 @@
       padding-top: 20px;
     }
   }
+  picture {
+    width: 100%;
+    height: 270px;
+  }
 
   .photo--last {
     display: flex;
@@ -510,6 +514,12 @@
       align-self: flex-start;
     }
 
+  }
+
+  picture {
+    width: 100%;
+    height: 270px;
+    background-size: contain;
   }
   .photo {
     display: flex;
