@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name=viewport content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="./css/style.css" rel="stylesheet">
 </head>
@@ -34,27 +35,20 @@
           <picture>
         <source media="(min-width: 1200px)"
                 srcset="img/photo-1-desktop@1x.jpg 1x,
-                                                img/photo-1-desktop@2x.jpg 2x">
+                        img/photo-1-desktop@2x.jpg 2x"
+                sizes="(min-width:1200px) 100vw">
         <source media="(min-width: 768px)"
                 srcset="img/photo-1-tablet@1x.jpg 1x,
-                                                img/photo-1-tablet@2x.jpg 2x">
+                       img/photo-1-tablet@2x.jpg 2x"
+                sizes="(min-width:1200px) 70vw : 100vw">
         <img class="photo__image photo__image--strange" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Неродные просторы">
       </picture>
     <h4 class="photo__title">Неродные просторы</h4>
     <p class="photo__text">Автор фото: Борис</p>
     <div class="photo__button">
-      <button class="photo__trumb-up">
-        <picture>
-          <source media="(min-width: 1200px)"
-                  srcset="img/icon-like-desktop.svg">
-          <source media="(min-width: 768px)"
-                  srcset="img/icon-like-tablet.svg">
-          <img src="img/icon-like.svg" width="22" height="21" alt="">
-        </picture>
-
-      </button>
-      <b class="photo__likes">1350</b>
-    </div>
+        <button class="photo__trumb-up"></button>
+        <b class="photo__likes">1350</b>
+              </div>
   </div>
   <div class="photo">
     <picture>
