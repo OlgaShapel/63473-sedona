@@ -6,6 +6,7 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync");
+var del = require("del");
 
 gulp.task("copy", function() {
   return gulp.src([
@@ -17,6 +18,10 @@ gulp.task("copy", function() {
       base: "."
     })
     .pipe(gulp.dest("build"));
+});
+
+gulp.task("clean", function() {
+ return del("build");
 });
 
 gulp.task("style", function() {
