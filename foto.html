@@ -7,10 +7,13 @@
   <link href="./css/style.min.css" rel="stylesheet">
 </head>
 <body>
+<div class="page-wrapper">
 <header class="header">
   <nav class="main-nav">
     <ul class="main-nav__items">
-      <li class="main-nav__item main-nav__item--main"><a href="index.html">ГЛАВНАЯ</a><button class="main-nav__item main-nav__item--close" type="button"></button></li>
+      <li class="main-nav__item main-nav__item--main"><a href="index.html">ГЛАВНАЯ</a>
+        <button class="main-nav__item main-nav__item--close" type="button"></button>
+      </li>
       <li class="main-nav__item main-nav__item--foto"><a href="foto.html">ФОТО И ВИДЕО</a></li>
       <li class="main-nav__item main-nav__item--form"><a href="form.html">ФОРМА ОТЗЫВА</a></li>
       <li class="main-nav__item"><a href="#">HTMLACADEMY</a></li>
@@ -27,28 +30,30 @@
   <div class="header-image__form"></div>
   <div class="header-text--foto">
     <h1 class="header-text__title">фото и видео</h1>
-    <p class="header-text__text"> не можете решиться на путешествие из-за курса? фотографии помогут забыть вам о политике и экономике</p>
+    <p class="header-text__text"> не можете решиться на путешествие из-за курса? фотографии помогут забыть вам о
+      политике и экономике</p>
   </div>
 </header>
 <section class="page-main">
   <div class="photo--one">
-          <picture>
-        <source media="(min-width: 1200px)"
-                srcset="img/photo-1-desktop@1x.jpg 1x,
+    <picture>
+      <source media="(min-width: 1200px)"
+              srcset="img/photo-1-desktop@1x.jpg 1x,
                         img/photo-1-desktop@2x.jpg 2x"
-                sizes="(min-width:1200px) 100vw">
-        <source media="(min-width: 768px)"
-                srcset="img/photo-1-tablet@1x.jpg 1x,
+              sizes="(min-width:1200px) 100vw">
+      <source media="(min-width: 768px)"
+              srcset="img/photo-1-tablet@1x.jpg 1x,
                        img/photo-1-tablet@2x.jpg 2x"
-                sizes="(min-width:1200px) 70vw : 100vw">
-        <img class="photo__image photo__image--strange" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Неродные просторы">
-      </picture>
+              sizes="(min-width:1200px) 70vw : 100vw">
+      <img class="photo__image photo__image--strange" src="img/photo-1-mobile@1x.jpg"
+           srcset="img/photo-1-mobile@2x.jpg 2x" alt="Неродные просторы">
+    </picture>
     <h4 class="photo__title">Неродные просторы</h4>
     <p class="photo__text">Автор фото: Борис</p>
     <div class="photo__button">
-        <button class="photo__trumb-up"></button>
-        <b class="photo__likes">1350</b>
-              </div>
+      <button class="photo__trumb-up"></button>
+      <b class="photo__likes">1350</b>
+    </div>
   </div>
   <div class="photo">
     <picture>
@@ -58,15 +63,17 @@
       <source media="(min-width: 768px)"
               srcset="img/photo-2-tablet@1x.jpg 1x,
                                                 img/photo-2-tablet@2x.jpg 2x">
-      <img class="photo__image" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Местная растительность">
+      <img class="photo__image" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x"
+           alt="Местная растительность">
     </picture>
-     <h4 class="photo__title">Местная растительность</h4>
+    <h4 class="photo__title">Местная растительность</h4>
     <p class="photo__text">Автор фото: Сергей</p>
     <div class="photo__button">
       <button class="photo__trumb-up"></button>
       <b class="photo__likes">143</b>
     </div>
   </div>
+
   <div class="photo">
     <picture>
       <source media="(min-width: 1200px)"
@@ -75,9 +82,10 @@
       <source media="(min-width: 768px)"
               srcset="img/photo-3-tablet@1x.jpg 1x,
                                                 img/photo-3-tablet@2x.jpg 2x">
-      <img class="photo__image" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Дорога на север">
+      <img class="photo__image" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x"
+           alt="Дорога на север">
     </picture>
-     <h4 class="photo__title">Дорога на север</h4>
+    <h4 class="photo__title">Дорога на север</h4>
     <p class="photo__text">Автор фото: Петр</p>
     <div class="photo__button">
       <button class="photo__trumb-up"></button>
@@ -92,7 +100,8 @@
       <source media="(min-width: 768px)"
               srcset="img/photo-4-tablet@1x.jpg 1x,
                                                 img/photo-4-tablet@2x.jpg 2x">
-      <img class="photo__image" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Мост дьявола">
+      <img class="photo__image" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x"
+           alt="Мост дьявола">
     </picture>
     <h4 class="photo__title">Мост дъявола</h4>
     <p class="photo__text">Автор фото: Антон</p>
@@ -102,10 +111,19 @@
     </div>
   </div>
   <div class="video">
+    <picture>
+      <source media="(min-width: 1200px)"
+              srcset="img/video-desktop@1x.ipg 1x,
+                                                img/video-desktop@2x.ipg 2x">
+      <source media="(min-width: 768px)"
+              srcset="img/video-tablet@1x.jpg 1x,
+                                                img/video-tablet@2x 2x">
+      <img class="video__prew" src="img/video-mobile@1x.jpg" srcset="video-mobile@2x.jpg 2x"
+           alt="Мост дьявола">
+    </picture>
     <h4 class="video__title">Все еще сомневаетесь?</h4>
     <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-    <img class="video__prew" src="img/video-mobile@1x.jpg">
-    <div class="video__controls">
+       <div class="video__controls">
       <div class="video__control video__control--volume"></div>
       <div class="video__tools">
         <button class="video__tool video__tool--replay"></button>
@@ -113,7 +131,7 @@
         <button class="video__tool video__tool--fullscr"></button>
       </div>
     </div>
-    </div>
+  </div>
 </section>
 <footer class="footer">
   <div class="footer__map--form"></div>
@@ -129,6 +147,8 @@
       <p class="copyright-logo"></p>
     </div>
   </div>
-</footer></body>
+</footer>
+</div>
+</body>
 </html>
 

@@ -9,7 +9,7 @@
 
   .reason-wrapper {
     text-align: center;
-    background: #81b3d2 url("../img/divider2.png") 50% 0% no-repeat/100%;
+    background: #81b3d2 url("../img/divider2.png") no-repeat 50% 0%/100%;
   }
 
   .reason__title {
@@ -247,7 +247,7 @@ picture {
 @media (min-width: 1200px) {
 
   .reason {
-    width: 1200px;
+    width: 100%;
     picture {
       display: block;
       margin-bottom: 0;
@@ -264,7 +264,7 @@ picture {
 
   }
 .reason__text {
-  width: 70%;
+    width: 70%;
   letter-spacing: -0.5px;
 }
   .reason__foto {

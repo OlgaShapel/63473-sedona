@@ -37,6 +37,13 @@
   &:first-child {
     border-top: none;
   }
+  &:hover {
+    background-color: $btn-hover;
+  }
+
+  &:active {
+    background-color: $btn-down;
+      }
 }
 
 .main-nav__item {
@@ -50,6 +57,9 @@
     font-weight: normal;
     margin: 0;
     cursor: pointer;
+    &:active {
+      color: $color-down;
+    }
   }
 }
 
@@ -98,9 +108,9 @@
   margin-bottom: 26px;
   width: 100%;
   height: 390px;
-  background: url("../img/text-index.png") 50% center no-repeat,
-  url("../img/bg-intro-triangle-mobile.svg") 50% 364px no-repeat,
-  $bg-blue url("../img/bg-back-mobile@1x.jpg") center no-repeat;
+  background: url("../img/text-index.png") no-repeat 50% center,
+  url("../img/bg-intro-triangle-mobile.svg") no-repeat 50% 364px,
+  $bg-blue url("../img/bg-back-mobile@1x.jpg") no-repeat center;
 }
 
 .header-text {
@@ -120,7 +130,7 @@
 }
 
 .header-text__text {
-  margin-top: 32px;
+   margin-top: 32px;
   padding: 0;
   text-transform: uppercase;
   text-align: center;
@@ -174,6 +184,10 @@
     margin: 0;
     background: none;
     border: none;
+    &:hover,
+    &:active {
+      background: none;
+    }
 
     a {
       display: inline-block;
@@ -184,6 +198,29 @@
       color: #000000;
       font-weight: 400;
       margin: 0;
+      &:hover,
+      &:active {
+        background: none;
+      }
+
+      &:hover {
+        color: $bg-blue;
+      }
+      &:active {
+        color: $color-down;
+      }
+      &--active {
+        color: $color-down;
+
+        &:hover {
+          color: $color-down;
+        }
+
+        &:active {
+          color: $color-down;
+        }
+      }
+
     }
     &--foto {
       margin-right: 10%;
@@ -191,6 +228,7 @@
     &--form {
       margin-left: 10%;
     }
+
 
   }
   .main-nav__toggle {
@@ -221,14 +259,12 @@
     margin-bottom: 35px;
     width: 100%;
     height: 522px;
-    background: url("../img/text-index.png") 50% 45% no-repeat/60%,
-    url("../img/bg-triangle1.png") 50% 467px no-repeat,
-    $bg-blue url("../img/back-desktop.jpg") center no-repeat/100%;
+    background: url("../img/text-index.png") no-repeat 50% 45%/60%,
+    url("../img/bg-triangle1.png") no-repeat 50% 467px,
+    $bg-blue url("../img/back-desktop.jpg") no-repeat center/100%;
   }
 
   .header-text {
-    width: 78.1%;
-    padding-left: 25px;
     margin: 0 auto;
     background: #FFFFFF;
     margin-bottom: 35px;
@@ -252,6 +288,7 @@
     font-size: 12px;
     font-weight: 200;
     line-height: 21px;
+    width: 100%;
   }
 }
 
@@ -282,6 +319,17 @@
     &--form {
       margin-left: 10%;
     }
+    &:hover,
+    &:active {
+      background: none;
+    }
+
+    &:hover {
+      color: $bg-blue;
+    }
+    &:active {
+      color: $color-down;
+    }
   }
 
   .header-image {
@@ -291,9 +339,9 @@
     width: 100%;
     height: 522px;
     background-size: 100%;
-    background: url("../img/text-index.png") 50% 45% no-repeat/40%,
-    url("../img/bg-triangle1.png") 50% 433px no-repeat/100%,
-    $bg-blue url("../img/back-desktop.jpg") center no-repeat/100%;
+    background: url("../img/text-index.png") no-repeat 50% 45%/40%,
+    url("../img/bg-triangle1.png") no-repeat 50% 433px/100%,
+    $bg-blue url("../img/back-desktop.jpg")no-repeat center/100%;
   }
   .header-text {
     width: 41%;

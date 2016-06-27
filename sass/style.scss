@@ -7,6 +7,16 @@ $txt-transform: uppercase;
 $form-background: #f2f2f2;
 $form-text: #000000;
 $mobile-padding: 20px;
+$btn-hover: #669ec0;
+$btn-down: #5496bd;
+$color-down: #8db5d0;
+$color-disabled: #e5e5e5;
+
+@keyframes hotel-button-in-progress {
+  0%   { background-color: $bg-blue; }
+  50%  { background-color: $btn-hover; }
+  100% { background-color: $btn-down; }
+};
 
 @import 'normalize';
 @import 'header';
@@ -70,19 +80,36 @@ background-color: $bg-white;
     background-color: $form-background;
     margin: 0 auto;
   }
+  .page-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    background-color: $bg-white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
   img {
      height: auto;
 
   }
-  section {
-    width: 1200px;
+  header {
+    width: 100%;
     background-color: $bg-white;
     margin: 0 auto;
+
+}
+
+  section {
+    width: 100%;
+    background-color: $bg-white;
+    margin: 0 auto;
+
   }
   footer {
     width: 100%;
     background-color: $bg-white;
-
+    margin: 0 auto;
   }
 }
 

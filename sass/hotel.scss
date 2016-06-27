@@ -15,7 +15,6 @@
     font-size: 13px;
     width: 85%;
     margin-top: 5px;
-
   }
 }
 
@@ -27,13 +26,46 @@
   margin-bottom: 50px;
   border: none;
   outline: none;
+  text-align: center;
+  vertical-align: middle;
+  &:hover {
+    background-color: $btn-hover;
+  }
+  &:active {
+       background-color: $btn-down;
+  }
+  &:disabled {
+    background-color: $color-disabled;
+    cursor: not-allowed;
+  }
+
+  &-in-progress {
+    transition: background-color 0.1s linear;
+    0% {
+      background-color: $bg-blue;
+    }
+    50% {
+      background-color: $btn-hover;
+    }
+    100% {
+      background-color: $btn-down;
+    }
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
 
   a {
+    display: inline-block;
     text-decoration: none;
     color: $bg-white;
     font-size: 18px;
     font-weight: 600;
+    padding: 16px;
+    &:active {
+      color: #8db5d0;
+    }
   }
+
 }
 
 @media (min-width: 768px) {
