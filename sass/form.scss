@@ -5,7 +5,7 @@
   width: 100%;
   height: 156px;
   background: url("../img/text-sedona.svg") no-repeat 50% 41%/73%,
-  url("../img/divider_mobile_top.png") no-repeat 0 129px/100%,
+  url("../img/divider_mobile_top.png") no-repeat 0 122px/100%,
   url("../img/bg-back-mobile@1x.jpg") no-repeat center;
 }
 
@@ -38,8 +38,14 @@
   width: 320px;
   margin-bottom: 30px;
 }
+.form__group--name {
+  margin-bottom: 35px;
+}
 
-.form__group--name .form__group--contact .form__group--radio .form__group--check {
+.form__group--name,
+.form__group--contact,
+.form__group--radio,
+.form__group--check {
   flex-direction: column;
   flex-wrap: wrap;
   display: flex;
@@ -82,7 +88,7 @@
 .form__group--contact {
   display: inline-block;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 20px;
   margin-bottom: 30px;
   .form__header {
     padding-left: 17px;
@@ -202,7 +208,7 @@ input.form__field-btn {
 .form__input--radio:checked + label::before {
   display: inline-block;
   content: "";
-  background: $form-background url("../img/icon-map-marker.svg") no-repeat center;
+  background: #f2f2f2 url("../img/icon-map-marker.svg") no-repeat center;
   height: 56px;
   width: 56px;
   position: absolute;
@@ -422,6 +428,14 @@ input.form__field-btn {
       padding-left: 60px;
     }
   }
+  .form__group--name,
+  .form__group--contact,
+  .form__group--radio,
+  .form__group--check {
+    border-top: none;
+  }
+
+
   .form__group--contact {
     display: flex;
     flex-direction: column;

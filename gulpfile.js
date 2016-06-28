@@ -31,6 +31,13 @@ gulp.task("clean", function() {
  return del("build");
 });
 
+gulp.task("html", function() {
+  return gulp.src("*.html", {
+      base: "."
+    })
+    .pipe(gulp.dest("build"));
+});
+
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
     .pipe(plumber())
@@ -50,8 +57,7 @@ gulp.task("style", function() {
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"))
-    .pipe(server.reload({stream: true}))
+    .pipe(gulp.dest("build/css"));
 });
 
 gulp.task("images", function() {
@@ -89,6 +95,6 @@ gulp.task("serve", ["style"], function() {
     server: "build",
   });
 
-  gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("sass/**/*.{scss,sass}", ["style"]).on("change", server.reload);
+  gulp.watch("*.html", ["html"]).on("change", server.reload);
 });
