@@ -84,32 +84,11 @@ background-color: $bg-white;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-
     background-color: $bg-white;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   }
 
   img {
-     height: auto;
-
-  }
-  header {
-    width: 100%;
-    background-color: $bg-white;
-    margin: 0 auto;
-
-}
-
-  section {
-    width: 100%;
-    background-color: $bg-white;
-    margin: 0 auto;
-
-  }
-  footer {
-    width: 100%;
-    background-color: $bg-white;
-    margin: 0 auto;
+    height: auto;
   }
 }
-
