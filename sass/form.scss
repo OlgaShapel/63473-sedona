@@ -38,6 +38,7 @@
   width: 320px;
   margin-bottom: 30px;
 }
+
 .form__group--name {
   margin-bottom: 35px;
 }
@@ -70,7 +71,7 @@
   width: 167px;
   cursor: pointer;
 
-  &:hover {
+  &:focus {
     background-color: #e5e5e5;
   }
   &:active {
@@ -188,16 +189,17 @@ input.form__field-btn {
 
 .form__label--radio,
 .form__label--checkbox {
-  &:hover:before {
+  &:focus:before {
     background-color: #e5e5e5;
   }
   &:active:before {
     background-color: #d5d5d5;
   }
 }
+
 .form__label--radio:checked,
 .form__label--checkbox:checked {
-  &:hover:before {
+  &:focus:before {
     background-color: #e5e5e5;
   }
   &:active:before {
@@ -213,7 +215,7 @@ input.form__field-btn {
   width: 56px;
   position: absolute;
   border-radius: 50%;
- }
+}
 
 .form__input--radio + label::before {
   display: inline-block;
@@ -277,7 +279,7 @@ input.form__field-btn {
   background: #f2f2f2;
   background-size: 20px 20px;
   border-radius: 3px;
-  }
+}
 
 .form__input--checkbox:checked + label::before {
   position: absolute;
@@ -289,7 +291,7 @@ input.form__field-btn {
   background: $form-background url("../img/icon-tick.svg") no-repeat center;
   background-size: 20px 20px;
   border-radius: 3px;
-  }
+}
 
 .form__input--textarea {
   width: 250px;
@@ -316,7 +318,7 @@ input.form__field-btn {
   text-transform: uppercase;
   border: none;
   outline: none;
-  &:hover {
+  &:focus {
     background-color: $btn-hover;
   }
   &:active {
@@ -434,7 +436,6 @@ input.form__field-btn {
   .form__group--check {
     border-top: none;
   }
-
 
   .form__group--contact {
     display: flex;
@@ -689,8 +690,6 @@ input.form__field-btn {
     display: none;
   }
 }
-
-
 
 @media (min-width: 1200px) {
 

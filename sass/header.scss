@@ -43,7 +43,7 @@
 
   &:active {
     background-color: $btn-down;
-      }
+  }
 }
 
 .main-nav__item {
@@ -130,7 +130,7 @@
 }
 
 .header-text__text {
-   margin-top: 32px;
+  margin-top: 32px;
   padding: 0;
   text-transform: uppercase;
   text-align: center;
@@ -209,23 +209,26 @@
       &:active {
         color: $btn-down;
       }
-      &--active {
-        color: $color-down;
 
-        &:hover {
-          color: $color-down;
-        }
-
-        &:active {
-          color: $color-down;
-        }
-      }
     }
     &--foto {
       margin-right: 10%;
     }
     &--form {
       margin-left: 10%;
+    }
+    &--active {
+      a {
+        color: #8d7e75;
+
+        &:hover {
+          color: #604e43;
+        }
+
+        &:active {
+          color: #dbd8d5;
+        }
+      }
     }
   }
   .main-nav__item--main {
@@ -252,7 +255,7 @@
     left: 50%;
     z-index: 2;
     transform: translateX(-51%);
-     }
+  }
 
   .header-image {
     display: block;
@@ -342,7 +345,7 @@
     background-size: 100%;
     background: url("../img/text-index.png") no-repeat 50% 45%/40%,
     url("../img/bg-triangle1.png") no-repeat 50% 434px/100%,
-    $bg-blue url("../img/back-desktop.jpg")no-repeat center/100%;
+    $bg-blue url("../img/back-desktop.jpg") no-repeat center/100%;
   }
   .header-text {
     width: 41%;
