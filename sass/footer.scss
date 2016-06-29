@@ -24,91 +24,6 @@
   text-transform: uppercase;
 }
 
-.social-links {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.social-link {
-  display: inline-block;
-  margin: 0;
-  width: 40px;
-  height: 40px;
-  background: $bg-blue;
-  vertical-align: middle;
-
-  a {
-    padding: 15px;
-    text-align: center;
-  }
-}
-
-.social-link--fb {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background: $bg-blue url("../img/icon-facebook.svg") no-repeat center;
-
-  &:hover {
-    background-color: $btn-hover;
-  }
-  &:active {
-    background-color: $btn-down;
-  }
-}
-
-.social-link--yt {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background: $bg-blue url("../img/icon-youtube.svg") no-repeat center;
-
-  &:hover {
-    background-color: $btn-hover;
-  }
-  &:active {
-    background-color: $btn-down;
-  }
-}
-
-.social-link--tw {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background: $bg-blue url("../img/icon-twitter.svg") no-repeat center;
-
-  &:hover {
-    background-color: $btn-hover;
-  }
-  &:active {
-    background-color: $btn-down;
-  }
-}
-
-.coryright {
-  display: inline-flex;
-  justify-content: center;
-  width: auto;
-  height: auto;
-  padding-bottom: 20px;
-  margin-top: 28px;
-}
-
-.copyright-text {
-  display: inline-block;
-  text-align: center;
-  font-size: 12px;
-}
-
-.copyright-logo {
-  display: inline-block;
-  text-align: center;
-  margin-left: 10px;
-  width: 30px;
-  height: 38px;
-  background: url("../img/logo-htmlacademy.svg") no-repeat;
-}
-
 @media (min-width: 768px) {
 
   .footer__map {
@@ -138,63 +53,12 @@
     width: 150px;
 
   }
-  .social-link {
-    display: inline-block;
-    margin: 0;
-    width: 45px;
-    height: 45px;
-    vertical-align: middle;
-
-    a {
-      padding: 15px;
-      text-align: center;
-    }
-  }
-
-  .social-link--fb {
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    background: $bg-blue url("../img/icon-facebook.svg") no-repeat center;
-  }
-
-  .social-link--yt {
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    background: $bg-blue url("../img/icon-youtube.svg") no-repeat center;
-  }
-
-  .social-link--tw {
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    background: $bg-blue url("../img/icon-twitter.svg") no-repeat center;
-  }
-  .coryright {
-    margin-top: 0;
-
-    .copyright-text {
-      display: inline-block;
-      text-align: center;
-      font-size: 14px;
-      margin-left: 0;
-    }
-
-    .copyright-logo {
-      display: inline-block;
-      text-align: center;
-      margin-left: 10px;
-      width: 45px;
-      height: 40px;
-    }
-  }
-}
+ }
 
 @media (min-width: 1200px) {
 
   .footer .footer-wrap {
-      margin-top: 26px;
+    margin-top: 26px;
   }
 
   .footer__text {
@@ -211,60 +75,5 @@
     height: 350px;
     background: $bg-blue url("../img/bg-map-desktop@1x.jpg") no-repeat cente;
     background-size: cover;
-  }
-
-  .social-links {
-    display: inline-block;
-     margin-right: 124px;
-    flex-grow: 1;
-  }
-
-  .social-link {
-    margin: 0;
-    align-self: center;
-   vertical-align: middle;
-    a {
-      padding: 15px;
-      text-align: center;
-    }
-  }
-
-  .social-link--fb {
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    background: $bg-blue url("../img/icon-facebook.svg") no-repeat center;
- }
-
-  .social-link--yt {
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    background: $bg-blue url("../img/icon-youtube.svg") no-repeat center;
-  }
-
-  .social-link--tw {
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    background: $bg-blue url("../img/icon-twitter.svg") no-repeat center;
-  }
-
-  .coryright {
-    width: 15%;
-    margin-right: -11px;
-  }
-
-  .copyright-text {
-    display: inline-block;
-    margin-left: 12px;
-  }
-
-  .copyright-logo {
-    display: inline-block;
-    text-align: center;
-    margin-left: 10px;
-    width: 45px;
-    height: 40px;
   }
 }

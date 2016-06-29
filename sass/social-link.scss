@@ -1,0 +1,135 @@
+.social-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-link {
+  display: inline-block;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  background: $bg-blue;
+  vertical-align: middle;
+
+  a {
+    padding: 15px;
+    text-align: center;
+  }
+}
+
+.social-link--fb {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: $bg-blue url("../img/icon-facebook.svg") no-repeat center;
+
+  &:hover {
+    background-color: $btn-hover;
+  }
+  &:active {
+    background: $bg-blue url("../img/icon-facebook-down.svg") no-repeat center;
+  }
+}
+
+.social-link--yt {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: $bg-blue url("../img/icon-youtube.svg") no-repeat center;
+
+  &:hover {
+    background-color: $btn-hover;
+  }
+  &:active {
+    background: $btn-down $bg-blue url("../img/icon-youtube-down.svg") no-repeat center;;
+  }
+}
+
+.social-link--tw {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: $bg-blue url("../img/icon-twitter.svg") no-repeat center;
+
+  &:hover {
+    background-color: $btn-hover;
+  }
+  &:active {
+    background: $bg-blue url("../img/icon-twitter-down.svg") no-repeat center;
+  }
+}
+
+@media (min-width: 768px) {
+  .social-link {
+    display: inline-block;
+    margin: 0;
+    width: 45px;
+    height: 45px;
+    vertical-align: middle;
+
+    a {
+      padding: 15px;
+      text-align: center;
+    }
+  }
+
+  .social-link--fb {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: $bg-blue url("../img/icon-facebook.svg") no-repeat center;
+  }
+
+  .social-link--yt {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: $bg-blue url("../img/icon-youtube.svg") no-repeat center;
+  }
+
+  .social-link--tw {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: $bg-blue url("../img/icon-twitter.svg") no-repeat center;
+  }
+ }
+
+@media (min-width: 1200px) {
+  .social-links {
+    display: inline-block;
+    margin-right: 124px;
+    flex-grow: 1;
+  }
+
+  .social-link {
+    margin: 0;
+    align-self: center;
+    vertical-align: middle;
+    a {
+      padding: 15px;
+      text-align: center;
+    }
+  }
+
+  .social-link--fb {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: $bg-blue url("../img/icon-facebook.svg") no-repeat center;
+  }
+
+  .social-link--yt {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: $bg-blue url("../img/icon-youtube.svg") no-repeat center;
+  }
+
+  .social-link--tw {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: $bg-blue url("../img/icon-twitter.svg") no-repeat center;
+  }
+}

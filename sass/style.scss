@@ -13,10 +13,16 @@ $color-down: #8db5d0;
 $color-disabled: #e5e5e5;
 
 @keyframes hotel-button-in-progress {
-  0%   { background-color: $bg-blue; }
-  50%  { background-color: $btn-hover; }
-  100% { background-color: $btn-down; }
-};
+  0% {
+    background-color: $bg-blue;
+  }
+  50% {
+    background-color: $btn-hover;
+  }
+  100% {
+    background-color: $btn-down;
+  }
+}
 
 @import 'normalize';
 @import 'header';
@@ -27,6 +33,10 @@ $color-disabled: #e5e5e5;
 @import 'footer';
 @import 'form';
 @import 'photo';
+@import 'fonts';
+@import 'video';
+@import 'social-link';
+@import 'copyright';
 
 body {
   min-width: 320px;
@@ -46,13 +56,14 @@ ul, li {
   padding: 0;
   margin: 0;
 }
+
 button {
   cursor: pointer;
 }
 
 @media (min-width: 320px) {
   body {
-       min-width: 320px;
+    min-width: 320px;
 
   }
   .page-main {
@@ -69,9 +80,8 @@ button {
     margin: 0 auto;
   }
   section {
-background-color: $bg-white;
+    background-color: $bg-white;
   }
-
 }
 
 @media (min-width: 1200px) {
