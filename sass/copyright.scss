@@ -20,7 +20,16 @@
   width: 30px;
   height: 38px;
   background: url("../img/logo-htmlacademy.svg") no-repeat;
+
+  &:hover {
+    background: url("../img/logo-htmlacademy-hover.svg") no-repeat;
+  }
+  &:active {
+    background: url("../img/logo-htmlacademy-dowm.svg") no-repeat;
+  }
+
 }
+
 
 @media (min-width: 768px) {
   .coryright {
