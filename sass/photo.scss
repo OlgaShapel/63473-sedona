@@ -90,7 +90,7 @@ picture {
     justify-content: center;
   }
 
-   .photo--one {
+  .photo--one {
     display: block;
     flex-direction: row;
     align-content: stretch;
@@ -266,7 +266,7 @@ picture {
 
 @media (min-width: 1200px) {
 
-   .photo--one {
+  .photo--one {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
