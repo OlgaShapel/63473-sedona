@@ -36,7 +36,7 @@
   text-align: center;
   font-weight: normal;
   color: $bg-white;
-  width: 90%;
+  width: 70%;
   margin-top: 11px;
   padding-bottom: 23px;
 }
@@ -89,7 +89,7 @@
   text-align: center;
   font-weight: normal;
   color: $bg-white;
-  width: 90%;
+  width: 70%;
   margin-top: 11px;
   padding-bottom: 23px;
 }
@@ -98,7 +98,7 @@
   display: inline-block;
   margin-bottom: 0;
   flex-grow: 2;
-  height: 278px;
+  height: 260px;
   width: 100%;
   background-size: contain;
 }
@@ -108,7 +108,7 @@
     margin-top: 3px;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 78%;
     picture {
       display: block;
       margin-bottom: 0;
@@ -156,6 +156,7 @@
     padding-bottom: 35px;
     padding-left: 10px;
     padding-right: 10px;
+    width: 62%;
   }
 
   .reason__foto {
@@ -170,7 +171,7 @@
     margin-top: 0;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 77%;
     height: auto;
     padding-bottom: 0;
     picture {
@@ -198,7 +199,7 @@
     text-align: center;
     font-weight: 700;
     color: $bg-white;
-    width: 62%;
+    width: 56%;
     font-size: 19px;
     text-transform: uppercase;
     padding-top: 28px;
@@ -219,7 +220,7 @@
     text-align: center;
     font-weight: normal;
     color: $bg-white;
-    width: 79%;
+    width: 70%;
     margin-top: 19px;
     padding-bottom: 23px;
   }
@@ -236,7 +237,7 @@
   .reason2__foto {
     display: block;
     margin-bottom: 0;
-    height: 260px;
+    min-height: 260px;
     background-size: contain, 100%;
     order: 1;
     flex-grow: 3;
@@ -269,6 +270,23 @@
   .reason__foto {
     background-size: cover;
   }
+  .reason2 {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding-bottom: 0;
+    picture {
+      display: block;
+      margin-bottom: 0;
+      width: 67%;
+      height: 260px;
+      background-size: contain, 100%;
+      order: 1;
+      flex-grow: 3;
+    }
+  }
 
   .reason2__title {
     text-align: center;
@@ -283,6 +301,7 @@
   }
   .reason2__foto {
     background-size: cover;
+    height: 260px;
   }
 
 }

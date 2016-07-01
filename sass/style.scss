@@ -11,6 +11,8 @@ $btn-hover: #669ec0;
 $btn-down: #5496bd;
 $color-down: #8db5d0;
 $color-disabled: #e5e5e5;
+$retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";
+$i: "../img/";
 
 @keyframes hotel-button-in-progress {
   0% {

@@ -9,7 +9,7 @@
 
 .footer__map {
   display: block;
-  margin: 20px auto;
+  margin: 14px auto;
   width: 100%;
   height: 360px;
   background: url("../img/bg-map-mobile@1x.jpg") center no-repeat/100%;
@@ -33,7 +33,7 @@
     background-size: cover;
   }
   .footer .footer-wrap {
-    margin: 0;
+    margin: 23px auto;
     display: flex;
     flex-wrap: nowrap;
     align-items: baseline;
@@ -41,8 +41,9 @@
     justify-content: space-around;
     flex-basis: 100%;
     flex-grow: 1;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 80%;
   }
 
   .footer__text {

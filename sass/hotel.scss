@@ -4,26 +4,26 @@
   align-items: center;
 
   &__title {
-    margin-top: 34px;
+    margin-top: 18px;
     color: #000000;
-    font-size: 18px;
+    font-size: 21px;
     font-weight: 600;
   }
   &__text {
     text-align: center;
     color: #000000;
     font-size: 13px;
-    width: 85%;
+    width: 75%;
     margin-top: 5px;
   }
 }
 
 .hotel-button {
-  margin-top: 23px;
+  margin-top: 20px;
   background-color: $bg-blue;
   width: 280px;
   height: 55px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   border: none;
   outline: none;
   text-align: center;
@@ -72,13 +72,13 @@
   .hotel {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 71%;
     justify-content: center;
     margin: 0 auto;
 
     &__title {
-      margin-top: 57px;
-      font-size: 26px;
+      margin-top: 49px;
+      font-size: 30px;
     }
 
     &__text {
@@ -91,7 +91,7 @@
   }
 
   .hotel-button {
-    width: 85%;
+    width: 66%;
     height: 57px;
     margin-bottom: 37px;
     margin-top: 28px;
