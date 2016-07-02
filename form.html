@@ -114,11 +114,23 @@
         <h2 class="form__header"><span>Опишите свои эмоции:</span></h2>
       <textarea class="form__input  form__input--textarea" placeholder="Опишите подробно все свои восторги" rows="5"
                 name="comment"></textarea>
-
         <div class="form__submit">
           <button class="form__submit-btn" type="submit">Отправить отзыв</button>
           <span class="form__mobile-hidden"> * - Обязательные поля</span>
         </div>
+      </div>
+
+      <div class="form-group__popuperror">
+        <span class="form-group__title  form-group__title--error">Что-то пошло <br> не так!</span>
+        <p class="form-group__text  form-group__text--popup">
+          Проверьте поля, выделенные красным, <br> скорее всего вы забыли их заполнить
+        </p>
+        <button class="form-group__btn  form-group__btn--popup" type="submit">Ок</button>
+      </div>
+      <div class="form-group__popupsucces">
+        <span class="form-group__title">Ваш отзыв отправлен!</span>
+        <p class="form-group__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+        <button class="form-group__btn  form-group__btn--popupsucces" type="submit">Закрыть окно</button>
       </div>
     </form>
   </section>
@@ -132,8 +144,9 @@
         <a class="social-link social-link--yt" href="#"></a>
       </div>
       <div class="coryright">
-        <a class="copyright-text">разработано </a>
-        <p class="copyright-logo"></p>
+        <a href="htmlacademy.ru">
+        <p class="copyright-text">разработано </p></a>
+       <a href="#"> <p class="copyright-logo"></p></a>
       </div>
     </div>
   </footer>

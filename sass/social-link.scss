@@ -27,7 +27,7 @@
     background-color: $btn-hover;
   }
   &:active {
-    background: $bg-blue url("../img/icon-facebook-down.svg") no-repeat center;
+    background: $btn-down url("../img/icon-facebook-down.svg") no-repeat center;
   }
 }
 
@@ -41,7 +41,7 @@
     background-color: $btn-hover;
   }
   &:active {
-    background: $btn-down $bg-blue url("../img/icon-youtube-down.svg") no-repeat center;;
+    background: $btn-down url("../img/icon-youtube-down.svg") no-repeat center;;
   }
 }
 
@@ -55,7 +55,7 @@
     background-color: $btn-hover;
   }
   &:active {
-    background: $bg-blue url("../img/icon-twitter-down.svg") no-repeat center;
+    background: $btn-down url("../img/icon-twitter-down.svg") no-repeat center;
   }
 }
 

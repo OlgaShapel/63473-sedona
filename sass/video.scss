@@ -3,9 +3,8 @@
   flex-direction: column;
   flex-wrap: nowrap;
   position: relative;
-  width: 87%;
-  margin-left: 4%;
-  margin-right: 4%;
+  width: 320px;
+ margin: auto;
   margin-bottom: 62px;
 
   &__title {
@@ -46,7 +45,7 @@ img {
 .video__control--volume {
   position: relative;
   margin-top: -52px;
-  margin-left: 16px;
+  margin-left: 0;
   width: 320px;
   height: 44px;
   background: #4d4745;
@@ -79,7 +78,7 @@ img {
 }
 
 .video__tools {
-  margin-left: 16px;
+  margin-left: 0;
   display: inline-flex;
   width: 320px;
   height: 65px;
@@ -198,7 +197,7 @@ img {
       margin-left: 25px;
       margin-top: 2px;
       border: none;
-      background: url("../img/icon-video-replay.svg") no-repeat center;
+      background: url(../img/icon-video-replay1.svg) no-repeat center;
     }
 
     &--cc {
@@ -206,7 +205,7 @@ img {
       height: 60px;
       margin-left: 500px;
       border: none;
-      background: url("../img/icon-video-subtitles.svg") no-repeat center;
+      background: url("../img/icon-video-subtitles1.svg") no-repeat center;
     }
 
     &--fullscr {
@@ -215,7 +214,7 @@ img {
       margin-left: 10px;
       margin-right: 30px;
       border: none;
-      background: url("../img/icon-video-fullscreen.svg") no-repeat center;
+      background: url("../img/icon-video-fullscreen1.svg") no-repeat center;
     }
   }
 

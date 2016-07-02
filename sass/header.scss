@@ -72,6 +72,7 @@
   height: 40px;
   background: url("../img/icon-menu.svg") no-repeat;
   border: none;
+  outline: none;
 }
 
 .main-nav__item .main-nav__item--main {
@@ -91,6 +92,7 @@
   height: 35px;
   margin-left: 0;
   border: none;
+  outline: none;
 }
 
 .logo {
@@ -158,6 +160,7 @@
 
 .main-nav__item .main-nav__item--close--hidden {
   display: none;
+  outline: none;
 }
 
 .logo--hidden {
@@ -259,6 +262,7 @@
 
   .main-nav__toggle {
     display: none;
+    outline: none;
   }
 
   .main-nav__item .main-nav__item--main {
@@ -267,6 +271,7 @@
 
   .main-nav__item .main-nav__item--close {
     display: none;
+    outline: none;
   }
 
   .logo {
