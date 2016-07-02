@@ -5,7 +5,7 @@
   flex-basis: 320px;
   margin-top: 24px;
   margin-left: 8px;
-  height: 390px;
+  height: auto;
   padding-bottom: 2px;
   background: $bg-white;
 }
@@ -92,7 +92,7 @@
     }
     &--eat {
       position: inherit;
-      margin-left: 80px;
+      margin: 0 auto;
       width: 75px;
       height: 75px;
       background: url("../img/icon-burger.svg") no-repeat center/80%;
@@ -146,6 +146,9 @@
     padding-bottom: 2px;
     flex-basis: 1200px;
   }
+  .reasons__item {
+    width: 33.3333%;
+  }
   .reasons__picture {
     display: block;
     position: inherit;
@@ -172,8 +175,10 @@
       background: url("../img/icon-burger.svg") no-repeat center/80%;
     }
   }
+
+
   .reasons__text {
-    width: 66%;
+    width: 72%;
     margin-top: 0;
     display: inline-block;
     padding: 6% 15%;

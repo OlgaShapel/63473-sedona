@@ -95,7 +95,7 @@
 
 .logo {
   width: 188px;
-  height: 96px;
+  height: 84px;
   position: absolute;
   top: 222px;
   left: 50%;
@@ -167,14 +167,14 @@
   transform: translateX(-51%);
 }
 
-.header-image__form {
+.header-image--form {
   display: block;
   margin-top: 60px;
   margin-bottom: 28px;
   width: 100%;
   height: 156px;
-  background: url("../img/text-sedona-index.svg") no-repeat 50% 41%/73%,
-  url("../img/bg-intro-triangle-mobile.svg") no-repeat 0 122px/100%,
+  background: url("../img/text-sedona.svg") no-repeat 50% 41%/73%,
+  url("../img/bg-intro-triangle-mobile.svg") no-repeat 0 130px/100%,
   url("../img/bg-back-mobile@1x.jpg") no-repeat center;
 }
 
@@ -271,12 +271,11 @@
 
   .logo {
     width: 188px;
-    height: 96px;
+    height: 84px;
     position: absolute;
     top: 0;
-    left: 50%;
     z-index: 2;
-    transform: translateX(-51%);
+    transform: translateX(-50%);
   }
 
   .header-image {
@@ -285,9 +284,9 @@
     margin-bottom: 35px;
     width: 100%;
     height: 522px;
-    background: url("../img/text-sedona-index.svg") no-repeat 50% 45%/45%,
-    url("../img/bg-intro-triangle-tablet.svg") no-repeat 50% 467px,
-    $bg-blue url("../img/back-desktop.jpg") no-repeat center/100%;
+    background: url("../img/text-sedona-index.svg") no-repeat 52% 45%/60%,
+    url("../img/bg-intro-triangle-tablet.svg") no-repeat 50% 466px,
+    $bg-blue url("../img/back-desktop.jpg") no-repeat center/103%;
 
     @media #{$retina} {
       background: url("../img/text-sedona-index.svg") no-repeat 50% 45%/60%,
@@ -417,9 +416,9 @@
     width: 100%;
     height: 522px;
     background-size: 100%;
-    background: url("../img/text-sedona-index.svg") no-repeat 50% 45%/40%,
+    background: url("../img/text-sedona-index.svg") no-repeat 50% 45%/39%,
     url("../img/bg-intro-triangle-desktop.svg") no-repeat 50% 465px/101%,
-    $bg-blue url("../img/bg-back-desktop@1x.jpg") no-repeat center/100%;
+    $bg-blue url("../img/bg-back-desktop@1x.jpg") no-repeat center/102%;
 
     @media #{$retina} {
       background: url("../img/text-sedona-index.svg") no-repeat 50% 45%/60%,
@@ -429,7 +428,7 @@
 
   }
   .header-text {
-    width: 41%;
+    width: 50%;
     padding-left: 0;
   }
 
@@ -439,7 +438,7 @@
   }
 
   .header-text__text {
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 0;
     font-size: 14px;
   }

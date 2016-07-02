@@ -51,9 +51,9 @@
     flex-grow: 1;
     flex-basis: 100%;
     background-color: #eeeeee;
-    margin: 0 11%;
-    padding-top: 27px;
-    padding-bottom: 30px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
   }
 
@@ -81,23 +81,19 @@
   }
 
   .types__text {
-    width: 69%;
+    width: 63%;
     padding-bottom: 20px;
     margin-top: 0;
     border-bottom: none;
   }
 
-  .types__text--brake {
-    margin-top: 0;
-    word-break: break-all;
-  }
+
 }
 
 @media (min-width: 1200px) {
   .types {
     height: 228px;
-    margin-top: 0;
-    padding-top: 25px;
+   padding-top: 0;
     width: 100%;
     margin: 0 auto;
   }
@@ -110,15 +106,18 @@
   }
 
   .types__title {
-    width: 50%;
+    width: 44%;
     margin: 0 auto;
     padding-bottom: 7px;
+    margin-top: 20px;
 
   }
   .types__text {
     margin: 0 auto;
-    width: 73%;
+    width: 77%;
     text-align: center;
+    margin-top: 20px;
+    vertical-align: middle;
   }
   .types__number {
     margin: 0 auto;
