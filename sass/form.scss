@@ -67,7 +67,7 @@
 .form__group--contact {
   display: inline-block;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-left: 15px;
   .form__header {
     padding-bottom: 20px;
@@ -111,7 +111,9 @@ input.form__field-btn {
   width: 204px;
   height: 42px;
   margin: 6px auto;
-
+}
+.form__label--email {
+  padding-left: 25px;
 }
 
 .form__field--email {
@@ -144,6 +146,9 @@ input.form__field-btn {
 .form__group--radio {
   display: inline-block;
   position: relative;
+  margin-top: 0;
+  padding-top: 15px;
+  margin-left: 13px;
 
   .form__header {
     margin-bottom: 19px;
@@ -160,8 +165,8 @@ input.form__field-btn {
   text-transform: none;
   font-weight: 600;
   color: #000000;
-  padding-left: 78px;
-  font-size: 16px;
+  padding-left: 82px;
+  font-size: 18px;
   cursor: pointer;
 }
 
@@ -223,7 +228,7 @@ input.form__field-btn {
   display: flex;
   margin-top: 17px;
   border-top: 1px solid $bg-color;
-  padding-top: 25px;
+  padding-top: 20px;
   margin-bottom: 30px;
   .form__header {
     margin-bottom: 10px;
@@ -240,11 +245,12 @@ input.form__field-btn {
 .form__label--checkbox {
   margin-left: 58px;
   font-size: 16px;
-  padding: 20px;
+  padding: 32px;
   text-transform: none;
   line-height: 78px;
   font-weight: 600;
   cursor: pointer;
+
 }
 
 .form__input--checkbox + label::before {
@@ -270,12 +276,18 @@ input.form__field-btn {
   background-size: 20px 20px;
   border-radius: 3px;
 }
+.form__group--write {
+  margin: 18px auto;
+  width: 320px;
+
+}
 
 .form__input--textarea {
   width: 250px;
   height: 140px;
   margin: 20px auto;
   margin-bottom: 46px;
+  font-size: 16px;
   &:active {
     background: $bg-white;
     outline: 3px solid #e5e5e5;
@@ -289,7 +301,7 @@ input.form__field-btn {
   background-color: $bg-blue;
   width: 280px;
   height: 55px;
-  margin-bottom: 30px;
+  margin-bottom: 7px;
   color: $bg-white;
   font-size: 19px;
   font-weight: 400;
@@ -465,14 +477,14 @@ input.form__field-btn {
   .form__group--radio {
     display: flex;
     flex-direction: column;
-    flex-basis: 50%;
+    flex-basis: 48%;
     order: 1;
 
     .form__header {
       font-size: 22px;
-      margin-top: 57px;
+      margin-top: 43px;
       margin-bottom: 50px;
-      margin-left: 58px;
+      margin-left: 22px;
       font-stretch: semi-condensed;
     }
     .form__label--radio {
@@ -647,36 +659,43 @@ input.form__field-btn {
     margin-top: 0;
     .form__header {
       margin-top: 12px;
-      margin-bottom: 36px;
+      margin-bottom: 34px;
       margin-left: 72px;
+    }
+    label .form__label {
+      margin-right: 10px;
+    }
+    .form__input {
+      margin-left: 8px;
+      width: 290px;
     }
   }
   .mobile-hidden {
     display: block;
   }
 
-  .header-image__form {
-    display: block;
-    margin-top: 0;
-    margin-bottom: 35px;
-    width: 100%;
-    height: 305px;
-    background-size: 100%;
-    background: url("../img/text-sedona.svg") no-repeat 51% 45%/37%,
-    url("../img/bg-triangle1.png") no-repeat 50% 217px/100%,
-    $bg-blue url("../img/back-desktop.jpg") no-repeat center/100%;
+  .form__group--name {
+    .form__field {
+      margin-left: 18px;
+    }
   }
-  .form__group--radio .form__header {
-    font-size: 22px;
-    margin-top: 14px;
-    margin-bottom: 50px;
-    margin-left: 210px;
-    font-stretch: semi-condensed;
+
+  .form__group--radio {
+    padding-top: 0;
+
+    .form__header {
+      font-size: 22px;
+      margin-top: 18px;
+      margin-bottom: 50px;
+      font-stretch: semi-condensed;
+      padding-top: 0;
+    }
   }
   .form__group--radio .form__label--radio {
     line-height: 78px;
     padding-left: 208px;
     font-weight: 400;
+
   }
   .form__group--radio
   .form__input--radio + label::before {
@@ -687,15 +706,21 @@ input.form__field-btn {
     flex-direction: row;
     flex-basis: 1200px;
     flex-wrap: wrap;
+    padding-top: 30px;
 
     .form__header {
       display: block;
       width: 1200px;
       margin: 0 auto;
+      &:before {
+        left: 88px;
+        z-index: -1;
+      }
     }
+
   }
   .form__label--contact {
-    margin-top: 60px;
+    margin-top: 70px;
     display: inline-block;
     width: 75px;
     padding-left: 124px;
@@ -703,36 +728,40 @@ input.form__field-btn {
   }
   .form__input--contact {
     width: 237px;
-    margin-left: 10px;
+    margin-left: 5px;
     margin-top: -3px;
   }
   .phone-hidden {
     display: none;
   }
 
+  .mobile-hidden{
+    display: inline-block;
+  }
   input.form__field-btn {
-    left: 478px;
-    top: 40px;
+    left: 448px;
+    top: 50px;
   }
 
   .form__mistake {
     position: absolute;
     display: inline-block;
-    top: 10px;
-    left: 219px;
+    top: 18px;
+    left: 190px;
   }
 
   .form__field--email {
     width: 50%;
     position: relative;
     font-size: 13px;
-    margin-top: 9px;
+    margin-top: 19px;
 
   }
   .form__label--email {
     padding-left: 0;
     width: 20%;
-    margin-left: 140px;
+    margin-left: 115px;
+    font-size: 14px;
 
   }
   .form__input--email {
@@ -741,12 +770,14 @@ input.form__field-btn {
     margin-top: 32px;
   }
 
-  .form__field .form__email-btn {
-    left: 560px;
+  .form__field
+  .form__email-btn {
+    left: 530px;
     top: 33px;
   }
+
   .form__group--check {
-    padding-top: 15px;
+    padding-top: 2px;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -755,14 +786,19 @@ input.form__field-btn {
     margin-left: 20px;
 
     .form__header {
-      width: 38%;
+      margin-bottom: 0;
+
+      span {
+        width: 70%;
+        margin-bottom: 0;
+      }
     }
   }
 
   .form__group--write {
     flex-basis: 1200px;
     .form__header {
-      margin-top: 30px;
+      margin-top: 0;
       margin-left: 20px;
     }
 
@@ -770,21 +806,23 @@ input.form__field-btn {
       width: 925px;
       height: 136px;
       margin-top: 51px;
-      margin-left: 135px;
+      margin-left: 120px;
       padding-left: 30px;
       padding-top: 20px;
     }
   }
   .form__submit-btn {
-    margin-top: 15px;
-    margin-left: 135px;
+    margin-top: 7px;
+    margin-left: 120px;
     width: 480px;
     height: 58px;
+    font-size: 22px;
+    font-weight: 600;
   }
   .form__mobile-hidden {
-    top: 32px;
-    left: 940px;
-    font-size: 12px;
+    top: 28px;
+    left: 924px;
+    font-size: 13px;
   }
 }
 
