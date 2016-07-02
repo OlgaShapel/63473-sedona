@@ -292,7 +292,7 @@
       background: url("../img/text-sedona-index.svg") no-repeat 50% 45%/60%,
       url("../img/bg-intro-triangle-tablet.svg") no-repeat 50% 467px,
       $bg-blue url("#{$i}bg-back-desktop@2x.jpg")/100%;
-         }
+    }
   }
 
   .header-text {
@@ -322,22 +322,21 @@
 
   }
 
-
-.header-text--foto {
-  width: 60%;
-  display: inline-block;
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 55px;
-  .header-text__title {
-    margin-top: 41px;
-    font-size: 27px;
-    margin-bottom: 25px;
-  }
-  .header-text__text {
+  .header-text--foto {
+    width: 60%;
+    display: inline-block;
+    text-align: center;
     margin: 0 auto;
+    margin-bottom: 55px;
+    .header-text__title {
+      margin-top: 41px;
+      font-size: 27px;
+      margin-bottom: 25px;
+    }
+    .header-text__text {
+      margin: 0 auto;
+    }
   }
-}
   .header-text--form {
     margin-top: 25px;
     .header-text__title {
@@ -362,11 +361,17 @@
     margin-bottom: 35px;
     width: 100%;
     height: 290px;
-    background: url("../img/text-sedona-index.svg") no-repeat 50% 45%/60%,
+    background: url("../img/text-sedona.svg") no-repeat 50% 45%/40%,
     url("../img/bg-intro-triangle-tablet.svg") no-repeat 50% 235px,
     $bg-blue url("../img/back-desktop.jpg") no-repeat center/100%;
-  }
 
+    @media #{$retina} {
+      background: url("../img/text-sedona.svg") no-repeat 50% 45%/60%,
+      url("../img/bg-intro-triangle-tablet.svg") no-repeat 50% 235px,
+      $bg-blue url("#{$i}bg-back-desktop@2x.jpg")/100%;
+    }
+
+  }
 }
 
 @media (min-width: 1200px) {
@@ -476,6 +481,22 @@
       width: 38%;
       font-size: 14px;
       margin-top: 13px;
+    }
+  }
+  .header-image--form {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 35px;
+    width: 100%;
+    height: 290px;
+    background: url("../img/text-sedona.svg") no-repeat 50% 45%/40%,
+    url("../img/bg-intro-triangle-desktop.svg") no-repeat 50% 235px,
+    $bg-blue url("../img/bg-back-desktop@1x.jpg") no-repeat center/100%;
+
+    @media #{$retina} {
+      background: url("../img/text-sedona.svg") no-repeat 50% 45%/40%,
+      url("../img/bg-intro-triangle-desktop.svg") no-repeat 50% 235px,
+      $bg-blue url("#{$i}bg-back-desktop@2x.jpg")/100%;
     }
   }
 }
